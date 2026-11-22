@@ -1,0 +1,11 @@
+{
+  "name": "immigra-goravel",
+  "private": true,
+  "scripts": {
+    "dev:css": "tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --watch",
+    "build:css": "tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

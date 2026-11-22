@@ -1,0 +1,217 @@
+{{ define "welcome.tmpl" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Northway Immigration offers clear, professional guidance for Canadian immigration, study, work and family applications.">
+  <title>Northway Immigration | Canada Immigration Consultants</title>
+  <link rel="stylesheet" href="/public/css/app.css">
+  <script defer src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+</head>
+<body class="overflow-x-hidden bg-white">
+  <div class="bg-ink text-white">
+    <div class="container-page flex h-10 items-center justify-between text-[11px] font-semibold tracking-wide sm:text-xs">
+      <div class="flex items-center gap-5">
+        <a class="hidden items-center gap-2 sm:flex" href="tel:+1 6045550148"><i data-lucide="phone" class="h-3.5 w-3.5 text-gold"></i> +1 604 555 0148</a>
+        <a class="flex items-center gap-2" href="mailto:hello@northwayimmigration.ca"><i data-lucide="mail" class="h-3.5 w-3.5 text-gold"></i> hello@northwayimmigration.ca</a>
+      </div>
+      <a class="text-gold" href="#contact">Book a consultation <span class="ml-1">→</span></a>
+    </div>
+  </div>
+
+  <header class="relative z-30 border-b border-ink/10 bg-white">
+    <nav class="container-page flex h-[78px] items-center justify-between">
+      <a href="/" class="flex items-center gap-3" aria-label="Northway Immigration home">
+        <div class="grid h-11 w-11 place-items-center rounded-full border-2 border-teal">
+          <i data-lucide="compass" class="h-6 w-6 text-teal"></i>
+        </div>
+        <div><p class="font-serif text-[21px] font-bold leading-none text-ink">NORTHWAY</p><p class="mt-1 text-[9px] font-extrabold tracking-[0.28em] text-teal">IMMIGRATION</p></div>
+      </a>
+      <div class="hidden items-center gap-7 lg:flex">
+        <a class="text-sm font-bold text-teal" href="#">Home</a>
+        <a class="text-sm font-bold hover:text-teal" href="#about">About</a>
+        <a class="text-sm font-bold hover:text-teal" href="#services">Services</a>
+        <a class="text-sm font-bold hover:text-teal" href="#process">Process</a>
+        <a class="text-sm font-bold hover:text-teal" href="#testimonials">Stories</a>
+        <a class="btn-primary !px-5 !py-3" href="#contact">Free Assessment</a>
+      </div>
+      <button id="menuBtn" class="grid h-11 w-11 place-items-center rounded-full border border-ink/15 lg:hidden" aria-label="Open menu">
+        <i data-lucide="menu" class="h-5 w-5"></i>
+      </button>
+    </nav>
+    <div id="mobileMenu" class="hidden border-t border-ink/10 bg-white px-6 py-5 lg:hidden">
+      <div class="mx-auto flex max-w-[1320px] flex-col gap-4 text-sm font-bold"><a href="#about">About</a><a href="#services">Services</a><a href="#process">Process</a><a href="#testimonials">Stories</a><a class="text-teal" href="#contact">Free Assessment</a></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative isolate min-h-[610px] overflow-hidden bg-ink">
+      <img class="absolute inset-0 -z-20 h-full w-full object-cover opacity-55" src="https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=1800&q=85" alt="Toronto skyline">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/90 to-ink/15"></div>
+      <div class="container-page flex min-h-[610px] items-center py-16">
+        <div class="max-w-3xl text-white">
+          <p class="eyebrow !text-mint"><span class="h-1.5 w-1.5 rounded-full bg-gold"></span>Licensed Canadian immigration guidance</p>
+          <h1 class="mt-2 max-w-3xl font-serif text-5xl font-bold leading-[1.02] sm:text-6xl lg:text-[78px]">Your future in Canada starts <span class="italic text-mint">here.</span></h1>
+          <p class="mt-6 max-w-xl text-base leading-7 text-white/80 sm:text-lg">Personalised strategies, honest advice and dedicated support for every step of your Canadian immigration journey.</p>
+          <div class="mt-9 flex flex-wrap gap-3">
+            <a class="btn-primary" href="#contact">Start your assessment <i data-lucide="arrow-up-right" class="ml-2 h-4 w-4"></i></a>
+            <a class="btn-outline" href="#services">Explore services</a>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-0 right-0 hidden w-[38%] bg-white/95 py-6 pr-[max(2rem,calc((100vw-1320px)/2))] pl-8 lg:flex">
+        <div class="grid w-full grid-cols-3 divide-x divide-ink/10"><div class="px-5"><strong class="font-serif text-3xl">10+</strong><p class="mt-1 text-[11px] font-bold uppercase tracking-wider text-ink/60">Years experience</p></div><div class="px-5"><strong class="font-serif text-3xl">1,500+</strong><p class="mt-1 text-[11px] font-bold uppercase tracking-wider text-ink/60">Cases supported</p></div><div class="px-5"><strong class="font-serif text-3xl">98%</strong><p class="mt-1 text-[11px] font-bold uppercase tracking-wider text-ink/60">Client satisfaction</p></div></div>
+      </div>
+    </section>
+
+    <section id="services" class="relative py-20 sm:py-28">
+      <div class="container-page">
+        <div class="mb-10 flex items-end justify-between"><div><p class="eyebrow">Our expertise</p><h2 class="max-w-2xl font-serif text-4xl font-bold sm:text-[52px] sm:leading-tight">Immigration pathways for your goals</h2></div><a class="hidden text-sm font-bold text-teal sm:block" href="#contact">View all services →</a></div>
+        <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          {{ $cards := `Study|Build a future in Canada through the right study permit and institution strategy.|graduation-cap|#|Work|Turn your skills and experience into opportunities across Canada.|briefcase-business|#|Family|Reunite with the people who matter with thoughtful sponsorship support.|heart-handshake|#|Permanent Residency|Explore Express Entry and provincial programs designed around your profile.|map-pinned|#` }}
+          <article class="group relative min-h-[390px] overflow-hidden rounded-sm bg-ink text-white"><img class="absolute inset-0 h-full w-full object-cover opacity-60 transition duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Students on campus"><div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent"></div><div class="absolute inset-x-0 bottom-0 p-7"><div class="mb-5 grid h-12 w-12 place-items-center rounded-full bg-white text-teal"><i data-lucide="graduation-cap" class="h-6 w-6"></i></div><h3 class="font-serif text-3xl">Study in Canada</h3><p class="mt-3 text-sm leading-6 text-white/75">Build a future in Canada through the right study permit and institution strategy.</p><a class="mt-5 inline-flex items-center text-xs font-extrabold uppercase tracking-widest text-mint" href="#contact">Learn more <span class="ml-2">→</span></a></div></article>
+          <article class="group relative min-h-[390px] overflow-hidden rounded-sm bg-ink text-white"><img class="absolute inset-0 h-full w-full object-cover opacity-60 transition duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80" alt="Professional office"><div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent"></div><div class="absolute inset-x-0 bottom-0 p-7"><div class="mb-5 grid h-12 w-12 place-items-center rounded-full bg-white text-teal"><i data-lucide="briefcase-business" class="h-6 w-6"></i></div><h3 class="font-serif text-3xl">Work in Canada</h3><p class="mt-3 text-sm leading-6 text-white/75">Turn your skills and experience into opportunities across Canada.</p><a class="mt-5 inline-flex items-center text-xs font-extrabold uppercase tracking-widest text-mint" href="#contact">Learn more <span class="ml-2">→</span></a></div></article>
+          <article class="group relative min-h-[390px] overflow-hidden rounded-sm bg-ink text-white"><img class="absolute inset-0 h-full w-full object-cover opacity-60 transition duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=80" alt="Family together"><div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent"></div><div class="absolute inset-x-0 bottom-0 p-7"><div class="mb-5 grid h-12 w-12 place-items-center rounded-full bg-white text-teal"><i data-lucide="heart-handshake" class="h-6 w-6"></i></div><h3 class="font-serif text-3xl">Family Sponsorship</h3><p class="mt-3 text-sm leading-6 text-white/75">Reunite with the people who matter with thoughtful sponsorship support.</p><a class="mt-5 inline-flex items-center text-xs font-extrabold uppercase tracking-widest text-mint" href="#contact">Learn more <span class="ml-2">→</span></a></div></article>
+          <article class="group relative min-h-[390px] overflow-hidden rounded-sm bg-ink text-white"><img class="absolute inset-0 h-full w-full object-cover opacity-60 transition duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Canadian landscape"><div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent"></div><div class="absolute inset-x-0 bottom-0 p-7"><div class="mb-5 grid h-12 w-12 place-items-center rounded-full bg-white text-teal"><i data-lucide="map-pinned" class="h-6 w-6"></i></div><h3 class="font-serif text-3xl">Permanent Residency</h3><p class="mt-3 text-sm leading-6 text-white/75">Explore Express Entry and provincial programs around your profile.</p><a class="mt-5 inline-flex items-center text-xs font-extrabold uppercase tracking-widest text-mint" href="#contact">Learn more <span class="ml-2">→</span></a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bg-sand py-20 sm:py-28">
+      <div class="container-page grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+        <div class="relative"><div class="absolute -bottom-5 -left-5 h-32 w-32 rounded-full border border-gold/40"></div><img class="relative h-[560px] w-full rounded-sm object-cover" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85" alt="Immigration advisory team"><div class="absolute -bottom-6 right-6 max-w-[220px] rounded-sm bg-teal p-6 text-white shadow-xl"><i data-lucide="shield-check" class="h-7 w-7 text-mint"></i><p class="mt-3 font-serif text-2xl">Clarity at every step</p></div></div>
+        <div><p class="eyebrow">About Northway</p><h2 class="font-serif text-4xl font-bold leading-tight sm:text-[54px]">A more thoughtful way to move forward.</h2><p class="mt-6 leading-7 text-ink/70">Our team believes that immigration advice should feel clear, personal and achievable. We take time to understand your circumstances, explain every option and build a practical plan around your future.</p><div class="mt-8 grid gap-5 sm:grid-cols-2"><div class="border-l-2 border-gold pl-5"><h3 class="font-bold">Honest guidance</h3><p class="mt-2 text-sm leading-6 text-ink/65">Transparent recommendations with no false promises.</p></div><div class="border-l-2 border-gold pl-5"><h3 class="font-bold">One-on-one support</h3><p class="mt-2 text-sm leading-6 text-ink/65">A responsive team that knows your case and your goals.</p></div></div><a class="btn-primary mt-9" href="#contact">Meet our team</a></div>
+      </div>
+    </section>
+
+    <section id="process" class="bg-ink py-20 text-white sm:py-28">
+      <div class="container-page"><div class="mb-12 text-center"><p class="eyebrow !justify-center !text-mint">How it works</p><h2 class="font-serif text-4xl font-bold sm:text-[52px]">Simple steps. Clear direction.</h2></div><div class="grid gap-px overflow-hidden rounded-sm bg-white/10 md:grid-cols-4">
+        <div class="bg-ink p-8"><p class="font-serif text-5xl text-gold/70">01</p><h3 class="mt-7 text-lg font-bold">Initial consultation</h3><p class="mt-3 text-sm leading-6 text-white/60">Tell us about your plans and meet with an experienced consultant.</p></div>
+        <div class="bg-ink p-8"><p class="font-serif text-5xl text-gold/70">02</p><h3 class="mt-7 text-lg font-bold">Profile assessment</h3><p class="mt-3 text-sm leading-6 text-white/60">We review your eligibility, documents and most suitable pathways.</p></div>
+        <div class="bg-ink p-8"><p class="font-serif text-5xl text-gold/70">03</p><h3 class="mt-7 text-lg font-bold">Application strategy</h3><p class="mt-3 text-sm leading-6 text-white/60">Receive a clear plan and begin preparing a strong application.</p></div>
+        <div class="bg-ink p-8"><p class="font-serif text-5xl text-gold/70">04</p><h3 class="mt-7 text-lg font-bold">Submission &amp; follow-up</h3><p class="mt-3 text-sm leading-6 text-white/60">We submit, track and keep you informed through the final result.</p></div>
+      </div></div>
+    </section>
+
+    <section id="testimonials" class="bg-sand py-20 sm:py-28">
+      <div class="container-page">
+        <div class="mb-12 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="eyebrow">Client stories</p>
+            <h2 class="max-w-2xl font-serif text-4xl font-bold leading-tight sm:text-[52px]">Trusted on the journey that changed everything.</h2>
+          </div>
+          <div class="flex items-center gap-3">
+            <button id="testimonialPrev" class="grid h-12 w-12 place-items-center rounded-full border border-ink/15 bg-white text-ink transition hover:border-teal hover:text-teal" aria-label="Previous testimonial"><i data-lucide="arrow-left" class="h-5 w-5"></i></button>
+            <button id="testimonialNext" class="grid h-12 w-12 place-items-center rounded-full bg-teal text-white transition hover:bg-ink" aria-label="Next testimonial"><i data-lucide="arrow-right" class="h-5 w-5"></i></button>
+          </div>
+        </div>
+        <div id="testimonialCarousel" class="flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <article class="testimonial-card snap-start rounded-sm bg-white p-7 shadow-[0_12px_40px_rgba(11,31,51,.06)] sm:p-9">
+            <i data-lucide="quote" class="h-8 w-8 text-gold"></i>
+            <p class="mt-6 min-h-[150px] font-serif text-2xl leading-snug">“Northway turned a complicated process into a clear plan. Every question was answered and we always knew what came next.”</p>
+            <footer class="mt-8 flex items-center gap-4 border-t border-ink/10 pt-6"><img class="h-11 w-11 rounded-full object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Priya M."><div><strong class="block text-sm">Priya M.</strong><span class="text-xs text-ink/50">Permanent residence</span></div></footer>
+          </article>
+          <article class="testimonial-card snap-start rounded-sm bg-white p-7 shadow-[0_12px_40px_rgba(11,31,51,.06)] sm:p-9">
+            <i data-lucide="quote" class="h-8 w-8 text-gold"></i>
+            <p class="mt-6 min-h-[150px] font-serif text-2xl leading-snug">“The team explained every document and deadline clearly. Their organised approach made my study permit application much less stressful.”</p>
+            <footer class="mt-8 flex items-center gap-4 border-t border-ink/10 pt-6"><img class="h-11 w-11 rounded-full object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Daniel K."><div><strong class="block text-sm">Daniel K.</strong><span class="text-xs text-ink/50">Study permit</span></div></footer>
+          </article>
+          <article class="testimonial-card snap-start rounded-sm bg-white p-7 shadow-[0_12px_40px_rgba(11,31,51,.06)] sm:p-9">
+            <i data-lucide="quote" class="h-8 w-8 text-gold"></i>
+            <p class="mt-6 min-h-[150px] font-serif text-2xl leading-snug">“We felt supported from our first conversation until the final submission. The guidance was honest, prompt and easy to understand.”</p>
+            <footer class="mt-8 flex items-center gap-4 border-t border-ink/10 pt-6"><img class="h-11 w-11 rounded-full object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sarah &amp; Arjun"><div><strong class="block text-sm">Sarah &amp; Arjun</strong><span class="text-xs text-ink/50">Family sponsorship</span></div></footer>
+          </article>
+          <article class="testimonial-card snap-start rounded-sm bg-white p-7 shadow-[0_12px_40px_rgba(11,31,51,.06)] sm:p-9">
+            <i data-lucide="quote" class="h-8 w-8 text-gold"></i>
+            <p class="mt-6 min-h-[150px] font-serif text-2xl leading-snug">“The consultation gave us confidence before we began. We received practical advice and clear updates throughout our work permit process.”</p>
+            <footer class="mt-8 flex items-center gap-4 border-t border-ink/10 pt-6"><img class="h-11 w-11 rounded-full object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80" alt="Marcus T."><div><strong class="block text-sm">Marcus T.</strong><span class="text-xs text-ink/50">Work permit</span></div></footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="bg-white py-20 sm:py-28">
+      <div class="container-page grid gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:gap-16">
+        <div>
+          <p class="eyebrow">Frequently asked</p>
+          <h2 class="font-serif text-4xl font-bold leading-tight sm:text-[54px]">Answers before you begin.</h2>
+          <p class="mt-5 max-w-md leading-7 text-ink/65">Every immigration journey is different. Here are answers to some common questions.</p>
+          <a class="btn-primary mt-8" href="#contact">Ask your question</a>
+        </div>
+        <div class="divide-y divide-ink/10 border-y border-ink/10">
+          <details class="group py-6" open>
+            <summary class="flex cursor-pointer list-none items-center justify-between font-bold">How do I know which immigration program is right for me?<i data-lucide="chevron-down" class="h-5 w-5 text-teal transition group-open:rotate-180"></i></summary>
+            <p class="mt-4 pr-8 text-sm leading-7 text-ink/65">We review your goals, education, work experience, language profile and family situation before recommending suitable Canadian immigration pathways.</p>
+          </details>
+          <details class="group py-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-bold">Do you guarantee application approval?<i data-lucide="chevron-down" class="h-5 w-5 text-teal transition group-open:rotate-180"></i></summary>
+            <p class="mt-4 pr-8 text-sm leading-7 text-ink/65">No responsible consultant can guarantee a decision. Government authorities make final decisions, while we help prepare and present a complete, accurate application.</p>
+          </details>
+          <details class="group py-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-bold">Can you help with study or work permits?<i data-lucide="chevron-down" class="h-5 w-5 text-teal transition group-open:rotate-180"></i></summary>
+            <p class="mt-4 pr-8 text-sm leading-7 text-ink/65">Yes. We provide guidance for study permits, work permits, visitor applications, family sponsorship and permanent residence options.</p>
+          </details>
+          <details class="group py-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-bold">What happens during the first consultation?<i data-lucide="chevron-down" class="h-5 w-5 text-teal transition group-open:rotate-180"></i></summary>
+            <p class="mt-4 pr-8 text-sm leading-7 text-ink/65">We discuss your objectives, review your basic profile and explain possible next steps, timelines and documents that may be required.</p>
+          </details>
+          <details class="group py-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-bold">How can I start my assessment?<i data-lucide="chevron-down" class="h-5 w-5 text-teal transition group-open:rotate-180"></i></summary>
+            <p class="mt-4 pr-8 text-sm leading-7 text-ink/65">Complete the enquiry form below or contact our team directly. We will follow up to arrange a consultation.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-sand py-20 sm:py-28">
+      <div class="container-page grid gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:gap-16">
+        <div>
+          <p class="eyebrow">Talk to an advisor</p>
+          <h2 class="font-serif text-4xl font-bold leading-tight sm:text-[54px]">Let’s plan your next move.</h2>
+          <p class="mt-5 max-w-md leading-7 text-ink/65">Tell us a little about your goals. A member of our team will review your enquiry and contact you.</p>
+          <div class="mt-8 space-y-4 text-sm"><a class="flex items-center gap-3 font-bold" href="tel:+16045550148"><span class="grid h-10 w-10 place-items-center rounded-full bg-mint text-teal"><i data-lucide="phone" class="h-4 w-4"></i></span>+1 604 555 0148</a><a class="flex items-center gap-3 font-bold" href="mailto:hello@northwayimmigration.ca"><span class="grid h-10 w-10 place-items-center rounded-full bg-mint text-teal"><i data-lucide="mail" class="h-4 w-4"></i></span>hello@northwayimmigration.ca</a></div>
+        </div>
+        <div class="rounded-sm bg-white p-6 shadow-[0_20px_60px_rgba(11,31,51,.08)] sm:p-9">
+          {{ if .enquiry_success }}<div class="mb-6 rounded-sm border border-teal/20 bg-mint px-4 py-3 text-sm font-bold text-teal">{{ .enquiry_success }}</div>{{ end }}
+          {{ if .enquiry_error }}<div class="mb-6 rounded-sm border border-red-200 bg-red-50 px-4 py-3 text-sm font-bold text-red-700">{{ .enquiry_error }}</div>{{ end }}
+          <form method="POST" action="/contact/enquiries" class="grid gap-5 sm:grid-cols-2">
+            <div><label class="mb-2 block text-xs font-bold uppercase tracking-wider">Full name *</label><input name="name" required autocomplete="name" class="h-12 w-full rounded-sm border border-ink/15 px-4 outline-none transition focus:border-teal"></div>
+            <div><label class="mb-2 block text-xs font-bold uppercase tracking-wider">Email address *</label><input name="email" type="email" required autocomplete="email" class="h-12 w-full rounded-sm border border-ink/15 px-4 outline-none transition focus:border-teal"></div>
+            <div><label class="mb-2 block text-xs font-bold uppercase tracking-wider">Phone number *</label><input name="phone" required autocomplete="tel" class="h-12 w-full rounded-sm border border-ink/15 px-4 outline-none transition focus:border-teal"></div>
+            <div><label class="mb-2 block text-xs font-bold uppercase tracking-wider">Service interested in</label><select name="service" class="h-12 w-full rounded-sm border border-ink/15 bg-white px-4 outline-none transition focus:border-teal"><option value="Study Permit">Study Permit</option><option value="Work Permit">Work Permit</option><option value="Permanent Residence">Permanent Residence</option><option value="Family Sponsorship">Family Sponsorship</option><option value="Visitor Visa">Visitor Visa</option></select></div>
+            <div class="sm:col-span-2"><label class="mb-2 block text-xs font-bold uppercase tracking-wider">How can we help? *</label><textarea name="message" required rows="5" class="w-full resize-y rounded-sm border border-ink/15 px-4 py-3 outline-none transition focus:border-teal"></textarea></div>
+            <div class="sm:col-span-2"><button type="submit" class="btn-primary w-full sm:w-auto">Submit enquiry <i data-lucide="send" class="ml-2 h-4 w-4"></i></button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink text-white"><div class="container-page py-14"><div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4"><div><div class="flex items-center gap-3"><div class="grid h-10 w-10 place-items-center rounded-full border border-mint"><i data-lucide="compass" class="h-5 w-5 text-mint"></i></div><div><p class="font-serif text-lg font-bold">NORTHWAY</p><p class="text-[8px] tracking-[0.25em] text-mint">IMMIGRATION</p></div></div><p class="mt-5 max-w-xs text-sm leading-6 text-white/60">Practical, personalised Canadian immigration guidance.</p></div><div><h3 class="text-sm font-bold">Services</h3><div class="mt-5 flex flex-col gap-3 text-sm text-white/60"><a href="#services">Study permits</a><a href="#services">Work permits</a><a href="#services">Permanent residence</a><a href="#services">Family sponsorship</a></div></div><div><h3 class="text-sm font-bold">Explore</h3><div class="mt-5 flex flex-col gap-3 text-sm text-white/60"><a href="#about">About us</a><a href="#process">Our process</a><a href="#testimonials">Client stories</a><a href="#contact">Contact</a></div></div><div><h3 class="text-sm font-bold">Contact</h3><div class="mt-5 space-y-3 text-sm text-white/60"><p>Suite 420, Vancouver, BC</p><p>+1 604 555 0148</p><p>hello@northwayimmigration.ca</p></div></div></div><div class="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-white/40 sm:flex-row sm:justify-between"><p>© 2026 Northway Immigration. All rights reserved.</p><div class="flex gap-5"><a class="hover:text-white" href="/privacy">Privacy Policy</a><a class="hover:text-white" href="/terms">Terms and Conditions</a></div></div></div></footer>
+
+<script>
+  document.getElementById('menuBtn')?.addEventListener('click', () => document.getElementById('mobileMenu')?.classList.toggle('hidden'));
+  window.addEventListener('DOMContentLoaded', () => lucide?.createIcons());
+
+  // Testimonials carousel
+  const testimonialCarousel = document.getElementById('testimonialCarousel');
+  const testimonialCards = testimonialCarousel?.querySelectorAll('.testimonial-card');
+
+  function moveTestimonials(direction) {
+    if (!testimonialCarousel || !testimonialCards?.length) return;
+    const cardWidth = testimonialCards[0].getBoundingClientRect().width;
+    const maxScroll = testimonialCarousel.scrollWidth - testimonialCarousel.clientWidth;
+    const nextScroll = testimonialCarousel.scrollLeft + direction * (cardWidth + 20);
+    testimonialCarousel.scrollTo({
+      left: Math.max(0, Math.min(maxScroll, nextScroll)),
+      behavior: 'smooth'
+    });
+  }
+
+  document.getElementById('testimonialPrev')?.addEventListener('click', () => moveTestimonials(-1));
+  document.getElementById('testimonialNext')?.addEventListener('click', () => moveTestimonials(1));
+</script>
+</body>
+</html>
+{{ end }}

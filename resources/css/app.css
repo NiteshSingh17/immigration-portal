@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply font-sans text-ink antialiased; }
+}
+
+@layer components {
+  .container-page { @apply mx-auto w-full max-w-[1320px] px-5 sm:px-8 lg:px-12; }
+  .eyebrow { @apply mb-4 inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.22em] text-teal; }
+  .eyebrow::before { content: ''; @apply h-px w-8 bg-gold; }
+  .btn-primary { @apply inline-flex items-center justify-center rounded-full bg-teal px-6 py-3.5 text-sm font-bold text-white transition hover:bg-ink; }
+  .btn-outline { @apply inline-flex items-center justify-center rounded-full border border-white/50 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-white hover:text-ink; }
+  .testimonial-card {
+    flex: 0 0 85%;
+  }
+
+  @media (min-width: 640px) {
+    .testimonial-card {
+      flex-basis: calc((100% - 20px) / 2);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .testimonial-card {
+      flex-basis: calc((100% - 40px) / 3);
+    }
+  }
+}

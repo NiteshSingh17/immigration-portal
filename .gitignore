@@ -1,0 +1,30 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build and runtime artifacts
+main
+*.exe
+*.test
+*.out
+air.toml.tmp
+
+# Goravel storage and logs
+storage/framework/
+storage/logs/
+storage/app/*.json
+*.log
+
+# Generated Tailwind output
+public/css/app.css
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
