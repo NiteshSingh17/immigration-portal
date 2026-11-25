@@ -1,0 +1,1237 @@
+{{ define "caregiver-lmia.tmpl" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TS Immigration | Licensed Canadian Immigration Consultants in Brampton</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- ✅ SEO META TAGS -->
+  <meta name="description" content="TS Immigration is a trusted immigration consultancy in Brampton, Canada, providing expert services for Express Entry, Work Permits, Student Visas, Visitor Visas, Spouse Sponsorship, and PR applications.">
+  <meta name="keywords" content="TS Immigration, immigration consultant Brampton, Canada immigration, express entry Canada, work permit Canada, student visa Canada, visitor visa Canada, spouse sponsorship Canada, PR Canada, business investor visa Canada, citizenship Canada">
+  <meta name="author" content="TS Immigration">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  
+  <!-- ✅ Facebook Domain Verification -->
+  <meta name="facebook-domain-verification" content="ok03r4rpzaifyci5qdvxcrnw9n8diu" />
+  
+  
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];
+    w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5MHQBLN5');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- ✅ Open Graph (Facebook / LinkedIn Preview) -->
+  <meta property="og:title" content="TS Immigration | Canadian Immigration Experts in Brampton">
+  <meta property="og:description" content="We help individuals and families achieve their Canadian dreams through expert immigration guidance and personalized visa support.">
+  <meta property="og:image" content="/public/img/home%20page%20ts.jpg">
+  <meta property="og:url" content="/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TS Immigration">
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TS Immigration | Licensed Immigration Consultants in Brampton">
+  <meta name="twitter:description" content="Expert guidance for Express Entry, PR, Student Visa, and Work Permit in Canada.">
+  <meta name="twitter:image" content="/public/img/home%20page%20ts.jpg">
+
+  <!-- ✅ Canonical -->
+  <link rel="canonical" href="/">
+
+    <!-- ✅ Fonts (matches live site) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- ✅ Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- ✅ Bootstrap (matches live site v5.3.2) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ✅ SCHEMA.ORG JSON-LD (Structured Data) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "TS Immigration",
+    "image": "/public/img/home%20page%20ts.jpg",
+    "url": "/",
+    "telephone": "+1 416-457-1313",
+    "email": "info@tsimmigration.ca",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "100 Wilkinson Rd, #3",
+      "addressLocality": "Brampton",
+      "addressRegion": "Ontario",
+      "postalCode": "L6T 4Y9",
+      "addressCountry": "CA"
+    },
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "priceRange": "$$",
+    "sameAs": [
+      "https://www.facebook.com/tsimmigrations/",
+      "https://www.instagram.com/tsimmigrations/",
+      "https://www.youtube.com/@jassidhandianpunjabi",
+      "https://www.tiktok.com/@tsimmigrationbrampton"
+    ],
+    "description": "TS Immigration provides licensed immigration and visa consulting services in Brampton, Canada, including Express Entry, PR, Work Permits, Student Visas, and more."
+  }
+  </script>
+
+  <!-- ✅ Existing Styles -->
+  <style>
+    
+    
+    
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+      color: #000;
+      overflow-x: hidden;
+    }
+
+    #spinner {
+      transition: opacity 0.5s ease;
+    }
+    #spinner.show {
+      opacity: 1;
+      visibility: visible;
+    }
+    #spinner:not(.show) {
+      opacity: 0;
+      visibility: hidden;
+    }
+    .spinner-border {
+      color: #d31e1c !important;
+    }
+
+    .topbar {
+      background-color: #d31e1c;
+      color: #fff;
+      font-size: 14px;
+      animation: fadeInDown 0.8s ease;
+    }
+    .topbar a {
+      color: #fff;
+      transition: 0.3s;
+    }
+    .topbar a:hover {
+      color: #000;
+    }
+
+    .navbar {
+      background: #fff !important;
+      transition: all 0.4s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      animation: fadeIn 1s ease;
+    }
+    .navbar-brand img {
+      max-height: 80px;
+      transition: transform 0.3s ease;
+    }
+    .navbar-brand img:hover {
+      transform: scale(1.05);
+    }
+
+    .navbar-nav .nav-link {
+      color: #000 !important;
+      font-weight: 500;
+      padding: 10px 18px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .navbar-nav .nav-link::after {
+      content: "";
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #d31e1c;
+      transition: width 0.3s ease;
+    }
+    .navbar-nav .nav-link:hover::after {
+      width: 100%;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #d31e1c !important;
+    }
+    .navbar-nav .nav-link.active {
+      color: #d31e1c !important;
+    }
+
+    .dropdown-menu {
+      border: none;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      border-top: 3px solid #d31e1c;
+      animation: fadeIn 0.3s ease;
+    }
+    .dropdown-item {
+      color: #000;
+      transition: all 0.3s ease;
+    }
+    .dropdown-item:hover {
+      background-color: #d31e1c;
+      color: #fff;
+    }
+
+    .btn-custom {
+      background-color: #d31e1c;
+      color: #fff;
+      border-radius: 30px;
+      font-weight: 600;
+      padding: 8px 25px;
+      transition: all 0.3s ease;
+    }
+    .btn-custom:hover {
+      background-color: #000;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    @media (min-width: 992px) {
+      .navbar .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        animation: fadeIn 0.3s ease;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+  
+  
+</head>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1417258387040747');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1417258387040747&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<body>
+     <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MHQBLN5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager -->
+
+
+<!-- 🔒 Email Protection Script -->
+<script>
+  function decodeMail(user, domain) {
+    return user + "@" + domain;
+  }
+</script>
+
+<!-- ✅ Preload Font Awesome -->
+{{ template "navbar" }}
+
+    <!-- ================= HEADER START ================= -->
+
+<!-- Wrapper added (desktop spacing + centering) -->
+<div class="hero-carousel-wrapper">
+
+<!-- ✅ Preload Slider Images -->
+<link rel="preload" as="image" href="/public/img/size 02.jpg">
+<link rel="preload" as="image" href="/public/img/new kb (1).jpg">
+<link rel="preload" as="image" href="/public/img/new kb (2).jpg">
+<link rel="preload" as="image" href="/public/img/new kb (9).jpg">
+<link rel="preload" as="image" href="/public/img/new kb (8).jpg">
+<link rel="preload" as="image" href="/public/img/new kb (7).jpg">
+<link rel="preload" as="image" href="/public/img/new kb (6).jpg">
+<link rel="preload" as="image" href="/public/img/new kb (5).jpg">
+
+<div id="headerCarousel" class="carousel slide carousel-fade header-banner" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="/public/img/21.jpg" class="d-block w-100 slider-img" alt="Slide 1">
+    </div>
+
+    <!-- Add more slides here -->
+    <!-- Example:
+    <div class="carousel-item">
+      <img src="/public/img/about slider us new WITHOUT LOGO.jpg" class="d-block w-100 slider-img" alt="Slide 2">
+    </div>
+    -->
+
+  </div>
+</div>
+
+</div> <!-- wrapper end -->
+
+
+<!-- ================= CSS ================= -->
+<style>
+
+/* Desktop: spacing + center alignment */
+@media (min-width: 992px) {
+  .hero-carousel-wrapper {
+    max-width: 1900px;     /* adjust width if needed */
+    margin: 0 auto;        /* center */
+    padding: 0 40px;       /* left/right spacing */
+  }
+}
+
+/* Mobile & Tablet: full width, no gap */
+@media (max-width: 991px) {
+  .hero-carousel-wrapper {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.header-banner {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px !important;
+}
+
+/* Slider images */
+.slider-img {
+  width: 100%;
+  height: auto;
+  max-height: 844px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .slider-img {
+    max-height: 420px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .slider-img {
+    max-height: 260px;
+  }
+}
+
+</style>
+
+
+<!-- ================= JS ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const carousel = document.querySelector('#headerCarousel');
+  if (carousel) {
+    new bootstrap.Carousel(carousel, {
+      interval: 2500,
+      ride: 'carousel',
+      pause: false,
+      wrap: true
+    });
+  }
+
+  // Preload images
+  const imagesToPreload = [
+    "IMG_4901.JPG"
+  ];
+
+  imagesToPreload.forEach(img => {
+    const preloadImage = new Image();
+    preloadImage.src = "/public/img/IMG_4910.JPG" + img;
+  });
+
+});
+</script>
+
+<!-- ================= HEADER END ================= -->
+
+        
+<!-- ================= CAREGIVER LMIA SECTION ================= -->
+<section style="background-color:#fff; color:#000; font-family:'Poppins', sans-serif; padding:80px 0;">
+
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 style="color:#d80000; font-weight:700;">Caregiver LMIA Services</h2>
+      <div style="width:80px; height:4px; background-color:#d80000; margin:15px auto; border-radius:10px;"></div>
+      <p style="max-width:800px; margin:auto; color:#333;">
+        TS Immigration provides expert assistance for employers and caregivers navigating the Caregiver LMIA process.
+        Our experienced consultants ensure accuracy, compliance, and a smooth hiring journey.
+      </p>
+    </div>
+
+    <div class="row align-items-center gy-5">
+      
+      <!-- Left Points -->
+      <div class="col-lg-4 col-md-6">
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="margin-bottom:25px;">
+            <h5 style="color:#d80000;"><i class="fa fa-user-check me-2"></i>Eligibility Review</h5>
+            <p style="color:#333;">We evaluate your caregiving needs and confirm eligibility for the LMIA process under caregiver programs.</p>
+          </li>
+          <li style="margin-bottom:25px;">
+            <h5 style="color:#d80000;"><i class="fa fa-file-alt me-2"></i>Document Preparation</h5>
+            <p style="color:#333;">Our team assists in preparing required documentation, including job descriptions, employment contracts, and supporting evidence.</p>
+          </li>
+          <li>
+            <h5 style="color:#d80000;"><i class="fa fa-clipboard-check me-2"></i>Application Assistance</h5>
+            <p style="color:#333;">We guide you in completing and submitting the LMIA application accurately to ensure compliance with all regulations.</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Center Image -->
+      <div class="col-lg-4 col-md-12 text-center">
+        <img src="/public/img/canda post neww i made 1.jpg"
+             class="img-fluid rounded shadow-sm"
+             alt="Caregiver LMIA"
+             style="max-height:420px; object-fit:cover;">
+      </div>
+
+      <!-- Right Points -->
+      <div class="col-lg-4 col-md-6">
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="margin-bottom:25px;">
+            <h5 style="color:#d80000;"><i class="fa fa-search me-2"></i>Recruitment Support</h5>
+            <p style="color:#333;">We assist with recruitment documentation and proof of efforts to hire Canadian citizens or permanent residents.</p>
+          </li>
+          <li style="margin-bottom:25px;">
+            <h5 style="color:#d80000;"><i class="fa fa-handshake me-2"></i>Government Coordination</h5>
+            <p style="color:#333;">We liaise with government authorities on your behalf to ensure all requirements are fulfilled and updates are tracked efficiently.</p>
+          </li>
+          <li>
+            <h5 style="color:#d80000;"><i class="fa fa-comments me-2"></i>Continuous Guidance</h5>
+            <p style="color:#333;">We keep you informed throughout the LMIA process and provide expert support until a positive decision is received.</p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- BUTTON ADDED ABOVE SECTION -->
+<div style="text-align:center; margin-top:40px; margin-bottom:20px;">
+  <a href="http://bookeo.com/tsimmigration" 
+     class="btn btn-custom"
+     style="background-color:#d80000; color:#fff; border-radius:30px; padding:10px 26px; font-weight:600; font-size:18px;">
+     Book Appointment
+  </a>
+</div>
+
+
+  <!-- Caregiver LMIA Visa Detailed Section -->
+<div id="caregiver-lmia-section" class="container py-5 mt-5" style="text-align:center;">
+  <h3 style="color:#d80000; font-weight:700; margin-bottom:30px;">Caregiver LMIA Visa – Things You Need To Know</h3>
+
+  <div class="row g-4 justify-content-center">
+    
+    <!-- Who Can Apply -->
+    <div class="col-md-4 col-lg-3 col-sm-6">
+      <div class="visa-card p-3">
+        <h5 class="fw-bold">Who Can Apply?</h5>
+        <p style="font-size:14px; color:white;">
+          ✔ Individuals with caregiving experience<br>
+          ✔ Applicants with relevant education or training<br>
+          ✔ People eligible to work in Canada<br>
+          ✔ Age 21–50 preferred<br>
+          ✔ Meet language requirements (English/French)
+        </p>
+      </div>
+    </div>
+
+    <!-- Required Documents -->
+    <div class="col-md-4 col-lg-3 col-sm-6">
+      <div class="visa-card p-3">
+        <h5 class="fw-bold">Required Documents</h5>
+        <p style="font-size:14px; color:white;">
+          ✔ Passport<br>
+          ✔ Educational certificates<br>
+          ✔ Work experience letters<br>
+          ✔ LMIA offer from Canadian employer<br>
+          ✔ Police clearance certificate<br>
+          ✔ Medical examination<br>
+          ✔ Language test results (IELTS/CELPIP)
+        </p>
+      </div>
+    </div>
+
+    <!-- Cost Involved -->
+    <div class="col-md-4 col-lg-3 col-sm-6">
+      <div class="visa-card p-3">
+        <h5 class="fw-bold">How Much Does It Cost?</h5>
+        <p style="font-size:14px; color:white;">
+          ✔ Work Permit Application Fee: $155 CAD<br>
+          ✔ Biometrics: $85 CAD (if required)<br>
+          ✔ Medical Examination: $100–$350 CAD<br>
+          ✔ Language Test: approx. $300 CAD<br>
+          ✔ Optional consultancy/legal fees
+        </p>
+      </div>
+    </div>
+
+    <!-- Other Requirements -->
+    <div class="col-md-4 col-lg-3 col-sm-6">
+      <div class="visa-card p-3">
+        <h5 class="fw-bold">Other Requirements</h5>
+        <p style="font-size:14px; color:white;">
+          ✔ Valid LMIA from a Canadian employer<br>
+          ✔ Relevant caregiving experience<br>
+          ✔ Clean criminal record<br>
+          ✔ Good health condition<br>
+          ✔ Ability to live and work in Canada legally
+        </p>
+      </div>
+    </div>
+
+    <!-- Helpful Tips -->
+    <div class="col-md-4 col-lg-3 col-sm-6">
+      <div class="visa-card p-3">
+        <h5 class="fw-bold">Helpful Tips</h5>
+        <p style="font-size:14px; color:white;">
+          ✔ Ensure LMIA is approved before applying<br>
+          ✔ Highlight caregiving experience clearly<br>
+          ✔ Prepare all supporting documents<br>
+          ✔ Follow program-specific work permit requirements<br>
+          ✔ Keep language and medical results updated
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+
+<!-- ================= CSS ================= -->
+<style>
+/* Default card color = red */
+.visa-card {
+  display:block;
+  background-color:#d80000;
+  color:#ffffff;
+  text-decoration:none;
+  font-weight:600;
+  padding:18px 0;
+  border-radius:10px;
+  transition:all 0.3s ease;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Text & h5 always white */
+.visa-card h5 {
+  color:#ffffff !important;
+  transition:color 0.3s ease;
+}
+
+/* Active/clicked card becomes black */
+.visa-card.active {
+  background-color:#000000 !important;
+}
+
+/* Keep text white even on click */
+.visa-card.active h5,
+.visa-card.active p {
+  color:#ffffff !important;
+}
+
+/* Hover effect – slight lift */
+.visa-card:hover {
+  transform:translateY(-4px);
+}
+
+@media (max-width: 992px) {
+  .col-lg-4 ul { text-align:center; }
+}
+</style>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+document.querySelectorAll('#caregiver-lmia-section .visa-card').forEach(card => {
+  card.addEventListener('click', function() {
+    document.querySelectorAll('#caregiver-lmia-section .visa-card')
+      .forEach(c => c.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+</script>
+
+
+
+       
+
+
+
+<!-- Footer Start -->
+<footer>
+  <div class="container-fluid footer py-5" style="background-color: #000000; color: #ffffff;">
+    <div class="container py-5">
+      <div class="row g-5">
+
+        <style>
+
+          /* ===== Footer Links ===== */
+
+          .footer-item a {
+            display: inline-block;
+            transition: all 0.3s ease;
+            color: #ffffff;
+            text-decoration: none;
+            margin-bottom: 10px;
+          }
+
+          .footer-item a:hover {
+            transform: translateY(-4px);
+            color: #d32f2f !important;
+          }
+
+          .footer-item h4 {
+            transition: transform 0.3s ease;
+            font-weight: 700;
+          }
+
+          .footer-item h4:hover {
+            transform: translateY(-3px);
+          }
+
+          /* ===== Social Buttons ===== */
+
+          .footer-item .btn {
+            transition: all 0.3s ease;
+          }
+
+          .footer-item .btn:hover {
+            transform: translateY(-5px);
+            background-color: #d32f2f;
+            color: #fff !important;
+            border-color: #d32f2f;
+          }
+
+          /* ===== Quick Links ===== */
+
+          .quick-links a {
+            font-size: 15px;
+          }
+
+          /* ===== Designer Credit ===== */
+
+          .designer-credit {
+            text-align: center;
+            margin-top: 20px;
+            padding-bottom: 0px;
+            font-size: 16px;
+            color: #d32f2f;
+          }
+
+          .designer-credit a {
+            color: #d32f2f;
+            font-weight: 600;
+            text-decoration: none;
+          }
+
+          .designer-credit a:hover {
+            text-decoration: underline;
+          }
+
+          /* ===== Mobile Responsive ===== */
+
+          @media(max-width:768px){
+
+            .footer-item{
+              margin-bottom:30px;
+              text-align:left;
+            }
+
+            .footer-item h4{
+              font-size:22px;
+            }
+
+            .footer-item a,
+            .footer-item p{
+              font-size:14px !important;
+              line-height:1.7;
+            }
+
+            .designer-credit{
+              margin-top:15px;
+              font-size:14px;
+              text-align:center;
+            }
+
+            .footer .container{
+              padding-left:20px;
+              padding-right:20px;
+            }
+
+          }
+
+        </style>
+
+        <!-- Company Info -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+
+            <h4 class="mb-4" style="color: #d32f2f;">TS Immigration</h4>
+
+            <a href="#">
+              <i class="fas fa-home me-2" style="color: #d32f2f;"></i>
+              100 Wilkinson Rd, #3 Brampton, Ontario L6T 4Y9
+            </a>
+
+            <a href="mailto:info@tsimmigration.ca">
+              <i class="fas fa-envelope me-2" style="color: #d32f2f;"></i>
+              info@tsimmigration.ca
+            </a>
+
+            <a href="tel:+14164571313">
+              <i class="fas fa-phone me-2" style="color: #d32f2f;"></i>
+              +1 416 457-1313
+            </a>
+
+            <div class="d-flex align-items-center mt-3">
+
+              <i class="fas fa-share fa-2x me-2" style="color: #d32f2f;"></i>
+
+              <a class="btn btn-outline-danger btn-sm mx-1"
+                 href="https://www.facebook.com/tsimmigrations/"
+                 target="_blank">
+                 <i class="fab fa-facebook-f"></i>
+              </a>
+
+              <a class="btn btn-outline-danger btn-sm mx-1"
+                 href="https://www.instagram.com/tsimmigrations/?hl=en"
+                 target="_blank">
+                 <i class="fab fa-instagram"></i>
+              </a>
+
+              <a class="btn btn-outline-danger btn-sm mx-1"
+                 href="https://www.youtube.com/@jassidhandianpunjabi"
+                 target="_blank">
+                 <i class="fab fa-youtube"></i>
+              </a>
+
+              <a class="btn btn-outline-danger btn-sm mx-1"
+                 href="https://www.tiktok.com/@tsimmigrationbrampton"
+                 target="_blank">
+                 <i class="fab fa-tiktok"></i>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Immigration Services -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+
+            <h4 class="mb-4" style="color: #d32f2f;">Immigration Services</h4>
+
+            <a href="/express-entry">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Express Entry
+            </a>
+
+            <a href="/spouse-sponsorship">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Spouse Sponsorship
+            </a>
+
+            <a href="/caregiver-lmia">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Caregiver LMIA
+            </a>
+
+            <a href="/caregiver-permanent-residency">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Citizenship
+            </a>
+
+            <a href="/citizenship">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Caregiver PR
+            </a>
+
+            <a href="/business-investor">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Business Investor
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Visa Services -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+
+            <h4 class="mb-4" style="color: #d32f2f;">Visa</h4>
+
+            <a href="/student-visa">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Student Visa
+            </a>
+
+            <a href="/work-permit">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Work Permit
+            </a>
+
+            <a href="/visitor-visa">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Visitor Visa
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Location + Quick Links -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+
+            <h4 class="mb-3" style="color: #d32f2f;">📍 Our Location</h4>
+
+            <p style="font-size:16px; line-height:1.6; color:#ffffff;">
+              100 Wilkinson Rd, #3<br>
+              Brampton, Ontario<br>
+              L6T 4Y9, Canada
+            </p>
+
+            <a href="https://maps.app.goo.gl/U3YJk52KTFSiBU9g6"
+               target="_blank"
+               style="margin-top:10px; color:#38b6ff; font-weight:600;">
+              ➤ View on Google Maps
+            </a>
+
+            <!-- Quick Links -->
+
+            <div class="quick-links mt-4">
+
+              <h4 class="mb-3" style="color:#d32f2f;">
+                Quick Links
+              </h4>
+
+              <a href="/private-policy">
+                <i class="fas fa-shield-alt me-2" style="color:#d32f2f;"></i>
+                Privacy Policy
+              </a>
+
+              <a href="/terms-conditions">
+                <i class="fas fa-file-contract me-2" style="color:#d32f2f;"></i>
+                Terms & Conditions
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Designer Credit -->
+
+      <div class="designer-credit">
+        Designed by
+        <a href="https://mediahero.ca/" target="_blank" rel="noopener">
+          Hero Media
+        </a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<!-- Footer End -->
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg-square back-to-top"
+   style="position: fixed; bottom: 25px; right: 25px; background-color: #8B0000; color: white; border: none; z-index: 9999; display: none;">
+   <i class="fa fa-arrow-up"></i>
+</a>
+
+<script>
+  const backToTop = document.querySelector('.back-to-top');
+  window.addEventListener('scroll', () => {
+    backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+  });
+</script>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/+14165604658" target="_blank" class="whatsapp-float">
+  <img src="/public/img/WhatsApp_icon (1).png" alt="WhatsApp" />
+  <span class="whatsapp-tooltip">Book Appointment</span>
+</a>
+
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    bottom: 20px;
+    left: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.whatsapp-float img {
+    width: 35px;
+}
+.whatsapp-tooltip {
+    position: absolute;
+    bottom: 75px;
+    left: 70%;
+    transform: translateX(-40%);
+    background: #25D366;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+</style>
+
+<!-- ===== SMALL PREMIUM COOKIE POPUP START ===== -->
+
+<div id="cookiePopup" class="cookie-popup">
+
+  <div class="cookie-content">
+
+    <!-- Close Button -->
+    <button id="closeCookie" class="cookie-close">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <!-- Icon -->
+    <div class="cookie-icon">
+      <i class="fas fa-cookie-bite"></i>
+    </div>
+
+    <!-- Heading -->
+    <h3>Cookies Used</h3>
+
+    <!-- Text -->
+    <p>
+      We use cookies & Meta Pixel to improve your experience.
+    </p>
+
+    <!-- Buttons -->
+    <div class="cookie-buttons">
+
+      <button id="acceptCookie" class="cookie-btn accept-btn">
+        Accept
+      </button>
+
+      <a href="/cookie-policy" class="cookie-btn policy-btn">
+        Learn More
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<style>
+
+/* ===== COOKIE POPUP ===== */
+
+.cookie-popup{
+  position:fixed;
+  bottom:18px;
+  left:50%;
+  transform:translateX(-50%);
+  width:90%;
+  max-width:360px;
+  z-index:999999;
+  display:none;
+  animation:cookieFade 0.7s ease;
+}
+
+/* ===== CONTENT ===== */
+
+.cookie-content{
+
+  position:relative;
+
+  background:rgba(0,0,0,0.93);
+
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+
+  border:1px solid rgba(211,47,47,0.22);
+
+  border-radius:18px;
+
+  padding:22px 18px;
+
+  text-align:center;
+
+  overflow:hidden;
+
+  box-shadow:
+  0 8px 25px rgba(0,0,0,0.35),
+  0 0 15px rgba(211,47,47,0.15);
+}
+
+/* ===== GLOW ===== */
+
+.cookie-content::before{
+  content:'';
+  position:absolute;
+  width:150px;
+  height:150px;
+  background:rgba(211,47,47,0.07);
+  border-radius:50%;
+  top:-80px;
+  right:-60px;
+}
+
+/* ===== ICON ===== */
+
+.cookie-icon{
+  width:52px;
+  height:52px;
+
+  background:#d32f2f;
+
+  border-radius:50%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin:auto;
+  margin-bottom:14px;
+
+  font-size:22px;
+  color:#fff;
+
+  position:relative;
+  z-index:2;
+}
+
+/* ===== TITLE ===== */
+
+.cookie-content h3{
+  color:#fff;
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:10px;
+  position:relative;
+  z-index:2;
+}
+
+/* ===== TEXT ===== */
+
+.cookie-content p{
+  color:#d6d6d6;
+  font-size:13px;
+  line-height:1.6;
+  margin-bottom:18px;
+  position:relative;
+  z-index:2;
+}
+
+/* ===== BUTTONS ===== */
+
+.cookie-buttons{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  position:relative;
+  z-index:2;
+}
+
+/* ===== COMMON BTN ===== */
+
+.cookie-btn{
+  border:none;
+  padding:10px 18px;
+  border-radius:40px;
+  font-size:12px;
+  font-weight:600;
+  text-decoration:none;
+  transition:0.3s ease;
+  cursor:pointer;
+}
+
+/* ===== ACCEPT ===== */
+
+.accept-btn{
+  background:#d32f2f;
+  color:#fff;
+}
+
+.accept-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 6px 15px rgba(211,47,47,0.3);
+}
+
+/* ===== POLICY ===== */
+
+.policy-btn{
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.15);
+  color:#fff;
+}
+
+.policy-btn:hover{
+  background:#fff;
+  color:#000;
+}
+
+/* ===== CLOSE ===== */
+
+.cookie-close{
+  position:absolute;
+  top:10px;
+  right:10px;
+
+  width:28px;
+  height:28px;
+
+  border:none;
+  border-radius:50%;
+
+  background:rgba(255,255,255,0.08);
+
+  color:#fff;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+
+  transition:0.3s ease;
+
+  z-index:3;
+
+  font-size:11px;
+}
+
+.cookie-close:hover{
+  background:#d32f2f;
+  transform:rotate(90deg);
+}
+
+/* ===== ANIMATION ===== */
+
+@keyframes cookieFade{
+
+  from{
+    opacity:1;
+    transform:translate(-50%,40px);
+  }
+
+  to{
+    opacity:1;
+    transform:translate(-50%,0);
+  }
+
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+  .cookie-popup{
+    max-width:320px;
+    bottom:15px;
+  }
+
+  .cookie-content{
+    padding:20px 16px;
+  }
+
+  .cookie-content h3{
+    font-size:20px;
+  }
+
+  .cookie-content p{
+    font-size:12px;
+  }
+
+  .cookie-btn{
+    padding:9px 16px;
+    font-size:11px;
+  }
+
+}
+
+</style>
+
+<script>
+
+/* ===== SHOW POPUP ===== */
+
+window.onload = function(){
+
+  if(!localStorage.getItem("cookieAccepted")){
+
+    document.getElementById("cookiePopup").style.display = "block";
+
+  }
+
+}
+
+/* ===== ACCEPT ===== */
+
+document.getElementById("acceptCookie").onclick = function(){
+
+  localStorage.setItem("cookieAccepted","true");
+
+  document.getElementById("cookiePopup").style.display = "none";
+
+}
+
+/* ===== CLOSE ===== */
+
+document.getElementById("closeCookie").onclick = function(){
+
+  document.getElementById("cookiePopup").style.display = "none";
+
+}
+
+</script>
+
+<!-- ===== SMALL PREMIUM COOKIE POPUP END ===== -->
+
+
+</body>
+</html>
+<!-- Cache by SpeedyCache https://speedycache.com -->
+{{ end }}

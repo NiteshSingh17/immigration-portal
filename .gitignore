@@ -1,0 +1,18 @@
+# Binaries / compiled
+goravel
+goravel-app
+tmp/
+*.exe
+
+# Logs
+storage/logs/
+
+# Environment
+.env
+.env.*.local
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

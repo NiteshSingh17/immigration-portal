@@ -1,0 +1,3727 @@
+{{ define "oinp-calculator.tmpl" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TS Immigration | Licensed Canadian Immigration Consultants in Brampton</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- ✅ SEO META TAGS -->
+  <meta name="description" content="TS Immigration is a trusted immigration consultancy in Brampton, Canada, providing expert services for Express Entry, Work Permits, Student Visas, Visitor Visas, Spouse Sponsorship, and PR applications.">
+  <meta name="keywords" content="TS Immigration, immigration consultant Brampton, Canada immigration, express entry Canada, work permit Canada, student visa Canada, visitor visa Canada, spouse sponsorship Canada, PR Canada, business investor visa Canada, citizenship Canada">
+  <meta name="author" content="TS Immigration">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  
+  <!-- ✅ Facebook Domain Verification -->
+  <meta name="facebook-domain-verification" content="ok03r4rpzaifyci5qdvxcrnw9n8diu" />
+  
+  
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];
+    w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5MHQBLN5');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- ✅ Open Graph (Facebook / LinkedIn Preview) -->
+  <meta property="og:title" content="TS Immigration | Canadian Immigration Experts in Brampton">
+  <meta property="og:description" content="We help individuals and families achieve their Canadian dreams through expert immigration guidance and personalized visa support.">
+  <meta property="og:image" content="/public/img/home%20page%20ts.jpg">
+  <meta property="og:url" content="/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TS Immigration">
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TS Immigration | Licensed Immigration Consultants in Brampton">
+  <meta name="twitter:description" content="Expert guidance for Express Entry, PR, Student Visa, and Work Permit in Canada.">
+  <meta name="twitter:image" content="/public/img/home%20page%20ts.jpg">
+
+  <!-- ✅ Canonical -->
+  <link rel="canonical" href="/">
+
+    <!-- ✅ Fonts (matches live site) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- ✅ Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- ✅ Bootstrap (matches live site v5.3.2) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ✅ SCHEMA.ORG JSON-LD (Structured Data) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "TS Immigration",
+    "image": "/public/img/home%20page%20ts.jpg",
+    "url": "/",
+    "telephone": "+1 416-457-1313",
+    "email": "info@tsimmigration.ca",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "100 Wilkinson Rd, #3",
+      "addressLocality": "Brampton",
+      "addressRegion": "Ontario",
+      "postalCode": "L6T 4Y9",
+      "addressCountry": "CA"
+    },
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "priceRange": "$$",
+    "sameAs": [
+      "https://www.facebook.com/tsimmigrations/",
+      "https://www.instagram.com/tsimmigrations/",
+      "https://www.youtube.com/@jassidhandianpunjabi",
+      "https://www.tiktok.com/@tsimmigrationbrampton"
+    ],
+    "description": "TS Immigration provides licensed immigration and visa consulting services in Brampton, Canada, including Express Entry, PR, Work Permits, Student Visas, and more."
+  }
+  </script>
+
+  <!-- ✅ Existing Styles -->
+  <style>
+    
+    
+    
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+      color: #000;
+      overflow-x: hidden;
+    }
+
+    #spinner {
+      transition: opacity 0.5s ease;
+    }
+    #spinner.show {
+      opacity: 1;
+      visibility: visible;
+    }
+    #spinner:not(.show) {
+      opacity: 0;
+      visibility: hidden;
+    }
+    .spinner-border {
+      color: #d31e1c !important;
+    }
+
+    .topbar {
+      background-color: #d31e1c;
+      color: #fff;
+      font-size: 14px;
+      animation: fadeInDown 0.8s ease;
+    }
+    .topbar a {
+      color: #fff;
+      transition: 0.3s;
+    }
+    .topbar a:hover {
+      color: #000;
+    }
+
+    .navbar {
+      background: #fff !important;
+      transition: all 0.4s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      animation: fadeIn 1s ease;
+    }
+    .navbar-brand img {
+      max-height: 80px;
+      transition: transform 0.3s ease;
+    }
+    .navbar-brand img:hover {
+      transform: scale(1.05);
+    }
+
+    .navbar-nav .nav-link {
+      color: #000 !important;
+      font-weight: 500;
+      padding: 10px 18px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .navbar-nav .nav-link::after {
+      content: "";
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #d31e1c;
+      transition: width 0.3s ease;
+    }
+    .navbar-nav .nav-link:hover::after {
+      width: 100%;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #d31e1c !important;
+    }
+    .navbar-nav .nav-link.active {
+      color: #d31e1c !important;
+    }
+
+    .dropdown-menu {
+      border: none;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      border-top: 3px solid #d31e1c;
+      animation: fadeIn 0.3s ease;
+    }
+    .dropdown-item {
+      color: #000;
+      transition: all 0.3s ease;
+    }
+    .dropdown-item:hover {
+      background-color: #d31e1c;
+      color: #fff;
+    }
+
+    .btn-custom {
+      background-color: #d31e1c;
+      color: #fff;
+      border-radius: 30px;
+      font-weight: 600;
+      padding: 8px 25px;
+      transition: all 0.3s ease;
+    }
+    .btn-custom:hover {
+      background-color: #000;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    @media (min-width: 992px) {
+      .navbar .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        animation: fadeIn 0.3s ease;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+  
+  
+</head>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1417258387040747');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1417258387040747&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<body>
+     <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MHQBLN5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager -->
+
+
+<!-- 🔒 Email Protection Script -->
+<script>
+  function decodeMail(user, domain) {
+    return user + "@" + domain;
+  }
+</script>
+
+<!-- ✅ Preload Font Awesome -->
+{{ template "navbar" }}
+
+  <!-- ================= HEADER START ================= -->
+
+<style>
+/* =========================================================
+   OINP WORKFORCE PRIORITY EOI SCORE CALCULATOR
+   FULL COPY-PASTE VERSION
+   ========================================================= */
+
+.oinp-calculator,
+.oinp-calculator * {
+    box-sizing: border-box;
+}
+
+.oinp-calculator {
+    width: 100%;
+    max-width: 1180px;
+    margin: 40px auto;
+    padding: 0 18px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+.oinp-header {
+    text-align: center;
+    margin-bottom: 32px;
+    animation: oinpFadeUp .6s ease both;
+}
+
+.oinp-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #e00000;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.oinp-eyebrow:before,
+.oinp-eyebrow:after {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background: #e00000;
+}
+
+.oinp-header h1 {
+    margin: 0;
+    font-size: clamp(30px, 5vw, 52px);
+    line-height: 1.08;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+}
+
+.oinp-header h1 span {
+    color: #e00000;
+}
+
+.oinp-header p {
+    max-width: 850px;
+    margin: 16px auto 0;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* SCORE CARD */
+
+.oinp-score-card {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 28px;
+    align-items: center;
+    padding: 28px;
+    margin-bottom: 25px;
+    border: 1px solid #e5e5e5;
+    border-radius: 24px;
+    box-shadow: 0 14px 45px rgba(0,0,0,.07);
+    animation: oinpFadeUp .7s ease both;
+}
+
+.oinp-score-number {
+    text-align: center;
+    border: 2px solid #e00000;
+    border-radius: 20px;
+    padding: 25px 15px;
+}
+
+.oinp-score-value {
+    font-size: 56px;
+    line-height: 1;
+    font-weight: 900;
+    color: #e00000;
+    transition: transform .25s ease;
+}
+
+.oinp-score-value.bump {
+    transform: scale(1.08);
+}
+
+.oinp-score-label {
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #555;
+}
+
+.oinp-score-info h2 {
+    margin: 0 0 8px;
+    font-size: 23px;
+    font-weight: 850;
+}
+
+.oinp-score-info p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.oinp-progress {
+    margin-top: 20px;
+}
+
+.oinp-progress-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #555;
+}
+
+.oinp-progress-bar {
+    width: 100%;
+    height: 8px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.oinp-progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #e00000;
+    border-radius: inherit;
+    transition: width .5s cubic-bezier(.22,1,.36,1);
+}
+
+
+/* MAIN */
+
+.oinp-main-grid {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) 315px;
+    gap: 25px;
+    align-items: start;
+}
+
+
+/* SECTION */
+
+.oinp-section {
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #e7e7e7;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.045);
+    animation: oinpFadeUp .7s ease both;
+}
+
+.oinp-section-header {
+    display: flex;
+    gap: 13px;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.oinp-section-icon {
+    width: 43px;
+    height: 43px;
+    min-width: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f0b5b5;
+    border-radius: 12px;
+    color: #e00000;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.oinp-section-title h2 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 850;
+}
+
+.oinp-section-title p {
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* QUESTIONS */
+
+.oinp-question {
+    margin-bottom: 24px;
+}
+
+.oinp-question:last-child {
+    margin-bottom: 0;
+}
+
+.oinp-label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 9px;
+}
+
+.oinp-question label {
+    display: block;
+    color: #181818;
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 750;
+}
+
+.oinp-points {
+    flex-shrink: 0;
+    color: #e00000;
+    font-size: 12px;
+    font-weight: 850;
+    opacity: 0;
+    transform: translateY(3px);
+    transition: .25s ease;
+}
+
+.oinp-points.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* SELECT */
+
+.oinp-select-wrap {
+    position: relative;
+}
+
+.oinp-select {
+    width: 100%;
+    min-height: 53px;
+    padding: 12px 45px 12px 15px;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    outline: none;
+    background: transparent;
+    color: #222;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.45;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.oinp-select:hover {
+    border-color: #aaa;
+}
+
+.oinp-select:focus {
+    border-color: #e00000;
+    box-shadow: 0 0 0 4px rgba(224,0,0,.08);
+}
+
+.oinp-select:disabled {
+    cursor: not-allowed;
+    opacity: .45;
+}
+
+.oinp-select-wrap:after {
+    content: "⌄";
+    position: absolute;
+    right: 17px;
+    top: 50%;
+    transform: translateY(-55%);
+    pointer-events: none;
+    color: #e00000;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+/* NOTES */
+
+.oinp-note {
+    margin-top: 9px;
+    padding: 10px 12px;
+    border-left: 3px solid #e00000;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.oinp-note strong {
+    color: #222;
+}
+
+
+/* CONDITIONAL EXPERIENCE */
+
+.oinp-conditional {
+    display: none;
+    margin-top: 16px;
+    padding: 17px;
+    border: 1px dashed #e2a0a0;
+    border-radius: 14px;
+    animation: oinpFadeUp .35s ease both;
+}
+
+.oinp-conditional.visible {
+    display: block;
+}
+
+.oinp-conditional-title {
+    margin-bottom: 8px;
+    color: #e00000;
+    font-size: 13px;
+    font-weight: 850;
+}
+
+.oinp-conditional-description {
+    margin-bottom: 14px;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+
+/* DISABLED QUESTION */
+
+.oinp-question.disabled {
+    opacity: .45;
+}
+
+
+/* SUMMARY */
+
+.oinp-summary {
+    position: sticky;
+    top: 25px;
+    padding: 24px;
+    border: 1px solid #e7e7e7;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.05);
+}
+
+.oinp-summary h3 {
+    margin: 0 0 18px;
+    font-size: 18px;
+    font-weight: 850;
+}
+
+.oinp-summary-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 13px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+}
+
+.oinp-summary-row span:first-child {
+    color: #555;
+}
+
+.oinp-summary-row span:last-child {
+    font-weight: 850;
+}
+
+.oinp-summary-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 16px;
+    border-top: 2px solid #111;
+}
+
+.oinp-summary-total span:first-child {
+    font-size: 14px;
+    font-weight: 850;
+}
+
+.oinp-summary-total span:last-child {
+    color: #e00000;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+/* RESET */
+
+.oinp-reset {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px 18px;
+    border: 1px solid #111;
+    border-radius: 11px;
+    background: transparent;
+    color: #111;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+.oinp-reset:hover {
+    background: #111;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+
+/* REGION DETAILS */
+
+.oinp-region-details {
+    margin-top: 16px;
+    border: 1px solid #ececec;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.oinp-region-details summary {
+    padding: 13px 15px;
+    cursor: pointer;
+    list-style: none;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.oinp-region-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.oinp-region-details summary:after {
+    content: "+";
+    float: right;
+    color: #e00000;
+    font-size: 17px;
+}
+
+.oinp-region-details[open] summary:after {
+    content: "−";
+}
+
+.oinp-region-content {
+    padding: 0 15px 15px;
+    border-top: 1px solid #eee;
+}
+
+.oinp-region-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #666;
+    font-size: 11.5px;
+    line-height: 1.65;
+}
+
+.oinp-region-item:last-child {
+    border-bottom: 0;
+}
+
+.oinp-region-item strong {
+    color: #222;
+}
+
+
+/* DISCLAIMER */
+
+.oinp-disclaimer {
+    margin-top: 22px;
+    padding: 19px;
+    border-left: 4px solid #e00000;
+    border-radius: 0 12px 12px 0;
+    color: #5d5d5d;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.oinp-disclaimer strong {
+    color: #111;
+}
+
+.oinp-source {
+    margin-top: 14px;
+    padding-top: 13px;
+    border-top: 1px solid #eee;
+}
+
+
+/* ANIMATION */
+
+@keyframes oinpFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .oinp-main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .oinp-summary {
+        position: static;
+        order: -1;
+    }
+
+    .oinp-score-card {
+        grid-template-columns: 180px 1fr;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .oinp-calculator {
+        margin: 25px auto;
+        padding: 0 12px;
+    }
+
+    .oinp-header h1 {
+        font-size: 31px;
+        letter-spacing: -.8px;
+    }
+
+    .oinp-header p {
+        font-size: 14px;
+    }
+
+    .oinp-score-card {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 18px;
+        border-radius: 18px;
+    }
+
+    .oinp-score-number {
+        padding: 20px;
+    }
+
+    .oinp-score-value {
+        font-size: 48px;
+    }
+
+    .oinp-section {
+        padding: 18px;
+        border-radius: 17px;
+    }
+
+    .oinp-section-title h2 {
+        font-size: 18px;
+    }
+
+    .oinp-label-row {
+        display: block;
+    }
+
+    .oinp-points {
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+    .oinp-select {
+        min-height: 55px;
+        font-size: 13px;
+    }
+
+    .oinp-summary {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .oinp-header h1 {
+        font-size: 27px;
+    }
+
+    .oinp-section {
+        padding: 15px;
+    }
+
+    .oinp-select {
+        font-size: 12px;
+    }
+}
+</style>
+
+
+<div class="oinp-calculator" id="oinpCalculator">
+
+    <!-- HEADER -->
+
+    <div class="oinp-header">
+
+        <div class="oinp-eyebrow">
+            Ontario Immigration
+        </div>
+
+        <h1>
+            OINP Workforce Priority
+            <span>EOI Score Calculator</span>
+        </h1>
+
+        <p>
+            Estimate the points you may receive under the
+            Ontario Workforce Priority Stream Expression of
+            Interest scoring factors.
+        </p>
+
+    </div>
+
+
+    <!-- SCORE CARD -->
+
+    <div class="oinp-score-card">
+
+        <div class="oinp-score-number">
+
+            <div
+                class="oinp-score-value"
+                id="oinpTotalScore">
+                0
+            </div>
+
+            <div class="oinp-score-label">
+                Estimated EOI Points
+            </div>
+
+        </div>
+
+        <div class="oinp-score-info">
+
+            <h2>
+                Your estimated EOI score
+            </h2>
+
+            <p>
+                Select the answers that apply to you.
+                Your estimated score will update automatically.
+            </p>
+
+            <div class="oinp-progress">
+
+                <div class="oinp-progress-top">
+
+                    <span>
+                        Score Progress
+                    </span>
+
+                    <span id="oinpProgressText">
+                        0 / 130
+                    </span>
+
+                </div>
+
+                <div class="oinp-progress-bar">
+
+                    <div
+                        class="oinp-progress-fill"
+                        id="oinpProgressFill">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MAIN GRID -->
+
+    <div class="oinp-main-grid">
+
+        <div class="oinp-form">
+
+
+            <!-- =================================================
+                 01 APPLICANT TYPE
+                 ================================================= -->
+
+            <div class="oinp-section">
+
+                <div class="oinp-section-header">
+
+                    <div class="oinp-section-icon">
+                        01
+                    </div>
+
+                    <div class="oinp-section-title">
+
+                        <h2>
+                            Applicant Type
+                        </h2>
+
+                        <p>
+                            This selection determines which
+                            employment questions apply to you.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="oinp-question">
+
+                    <div class="oinp-label-row">
+
+                        <label>
+                            How are you applying?
+                        </label>
+
+                    </div>
+
+                    <div class="oinp-select-wrap">
+
+                        <select
+                            class="oinp-select"
+                            id="applicantType">
+
+                            <option value="">
+                                Select applicant type
+                            </option>
+
+                            <option value="job">
+                                Job offer applicant
+                            </option>
+
+                            <option value="physician">
+                                Self-employed physician
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 02 EMPLOYMENT
+                 ================================================= -->
+
+            <div class="oinp-section">
+
+                <div class="oinp-section-header">
+
+                    <div class="oinp-section-icon">
+                        02
+                    </div>
+
+                    <div class="oinp-section-title">
+
+                        <h2>
+                            Employment & Labour Market Factors
+                        </h2>
+
+                        <p>
+                            NOC, wage, Ontario work experience,
+                            Canadian earnings and legal status.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TEER -->
+
+                <div class="oinp-question">
+
+                    <div class="oinp-label-row">
+
+                        <label>
+                            What is your NOC TEER category?
+                        </label>
+
+                        <span
+                            class="oinp-points"
+                            id="points-teer">
+                        </span>
+
+                    </div>
+
+                    <div class="oinp-select-wrap">
+
+                        <select
+                            class="oinp-select score-select"
+                            data-category="employment"
+                            data-points="teer">
+
+                            <option value="" data-score="0">
+                                Select TEER category
+                            </option>
+
+                            <option data-score="9">
+                                NOC TEER 0 or 1 — 9 points
+                            </option>
+
+                            <option data-score="6">
+                                NOC TEER 2 or 3 — 6 points
+                            </option>
+
+                            <option data-score="0">
+                                NOC TEER 4 — 0 points
+                            </option>
+
+                            <option data-score="0">
+                                NOC TEER 5 — 0 points
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="oinp-note">
+                        <strong>Note:</strong>
+                        This factor is prepopulated in the EOI based
+                        on the NOC associated with the job offer or
+                        self-employed physician application.
+                    </div>
+
+                </div>
+
+
+                <!-- OCCUPATION -->
+
+                <div class="oinp-question">
+
+                    <div class="oinp-label-row">
+
+                        <label>
+                            What is your NOC broad occupational category?
+                        </label>
+
+                        <span
+                            class="oinp-points"
+                            id="points-occupation">
+                        </span>
+
+                    </div>
+
+                    <div class="oinp-select-wrap">
+
+                        <select
+                            class="oinp-select score-select"
+                            data-category="employment"
+                            data-points="occupation">
+
+                            <option value="" data-score="0">
+                                Select occupational category
+                            </option>
+
+                            <option data-score="10">
+                                Occupational Category 3 — 10 points
+                            </option>
+
+                            <option data-score="8">
+                                Occupational Category 7 — 8 points
+                            </option>
+
+                            <option data-score="6">
+                                Occupational Category 2 — 6 points
+                            </option>
+
+                            <option data-score="4">
+                                Occupational Category 0 — 4 points
+                            </option>
+
+                            <option data-score="4">
+                                Occupational Category 1 — 4 points
+                            </option>
+
+                            <option data-score="2">
+                                Occupational Category 5 — 2 points
+                            </option>
+
+                            <option data-score="2">
+                                Occupational Category 6 — 2 points
+                            </option>
+
+                            <option data-score="4">
+                                Occupational Category 4 — 4 points
+                            </option>
+
+                            <option data-score="4">
+                                Occupational Category 8 — 4 points
+                            </option>
+
+                            <option data-score="4">
+                                Occupational Category 9 — 4 points
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="oinp-note">
+                        <strong>Note:</strong>
+                        This factor is prepopulated in the EOI from
+                        the NOC associated with the application.
+                    </div>
+
+                </div>
+
+
+                <!-- HOURLY WAGE -->
+
+                <div
+                    class="oinp-question"
+                    id="wageQuestion">
+
+                    <div class="oinp-label-row">
+
+                        <label>
+                            What is your hourly wage?
+                        </label>
+
+                        <span
+                            class="oinp-points"
+                            id="points-wage">
+                        </span>
+
+                    </div>
+
+                    <div class="oinp-select-wrap">
+
+                        <select
+                            class="oinp-select score-select"
+                            id="wage"
+                            data-category="employment"
+                            data-points="wage">
+
+                            <option value="" data-score="0">
+                                Select hourly wage
+                            </option>
+
+                            <option data-score="15">
+                                $40 per hour or higher — 15 points
+                            </option>
+
+                            <option data-score="12">
+                                $35 to $39.99 per hour — 12 points
+                            </option>
+
+                            <option data-score="10">
+                                $30 to $34.99 per hour — 10 points
+                            </option>
+
+                            <option data-score="8">
+                                $25 to $29.99 per hour — 8 points
+                            </option>
+
+                            <option data-score="5">
+                                $20 to $24.99 per hour — 5 points
+                            </option>
+
+                            <option data-score="0">
+                                Less than $20 per hour — 0 points
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="oinp-note">
+
+                        <strong>Note:</strong>
+                        This factor is prepopulated in the EOI if
+                        applying with a job offer. For self-employed
+                        physicians, the hourly wage scoring factor
+                        is not applicable.
+
+                    </div>
+
+                </div>
+
+
+                <!-- WORK EXPERIENCE -->
+
+                <div class="oinp-question">
+
+                    <div class="oinp-label-row">
+
+                        <label id="experienceLabel">
+                            What is your work experience in the job offer position?
+                        </label>
+
+                        <span
+                            class="oinp-points"
+                            id="points-jobExperience">
+                        </span>
+
+                    </div>
+
+                    <div class="oinp-select-wrap">
+
+                        <!--
+                            IMPORTANT:
+                            Options are generated by JavaScript.
+                            Do NOT add hidden job/physician options here.
+                        -->
+
+                        <select
+                            class="oinp-select score-select"
+                            id="jobExperience"
+                            data-category="employment"
+                            data-points="jobExperience">
+
+                            <option value="" data-score="0">
+                                Select experience
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div
+                        class="oinp-note"
+                        id="jobExperienceNote">
+
+                        Select your applicant type to determine
+                        which experience options apply.
+
+                    </div>
+
+
+                    <!-- CONDITIONAL ONTARIO EXPERIENCE -->
+
+                    <div
+                        class="oinp-conditional"
+                        id="ontarioExperienceBox">
+
+                        <div class="oinp-conditional-title">
+                            Additional Ontario Work Experience
+                        </div>
+
+                        <div class="oinp-conditional-description">
+
+                            Because you selected less than 6 months
+                            of experience in the job-offer position,
+                            qualifying Ontario work experience may
+                            be used for this scoring factor.
+
+                        </div>
+
+                        <div class="oinp-label-row">
+
+                            <label>
+                                What is your qualifying Ontario work experience?
+                            </label>
+
+                            <span
+                                class="oinp-points"
+                                id="points-ontarioExperience">
+                            </span>
+
+                        </div>
+
+                        <div class="oinp-select-wrap">
+
+                            <select
+                                class="oinp-select score-select"
+                                id="ontarioExperience"
+                                data-category="employment"
+                                data-points="ontarioExperience">
+
+                                <option value="" data-score="0">
+                                    Select Ontario work experience
+                                </option>
+
+                                <option data-score="12">
+                                    Over 24 months working in Ontario — 12 points
+                                </option>
+
+                                <option data-score="9">
+                                    13 to 24 months working in Ontario — 9 points
+                                </option>
+
+                                <option data-score="6">
+                                    6 to 12 months working in Ontario — 6 points
+                                </option>
+
+                                <option data-score="0">
+                                    Less than 6 months working in Ontario or not currently working in Ontario — 0 points
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CANADIAN EARNINGS -->
+
+                <div class="oinp-question">
+
+                    <div class="oinp-label-row">
+
+                        <label>
+                            What is your highest qualifying Canadian annual earnings history?
+                        </label>
+
+                        <span
+                            class="oinp-points"
+                            id="points-earnings">
+                        </span>
+
+                    </div>
+
+                    <div class="oinp-select-wrap">
+
+                        <select
+                            class="oinp-select score-select"
+                            data-category="employment"
+                            data-points="earnings">
+
+                            <option value="" data-score="0">
+                                Select annual earnings
+                            </option>
+
+                            <option data-score="8">
+                                $70,000 or more earnings in a year — 8 points
+                            </option>
+
+                            <option data-score="6">
+                                $50,000 to $69,999 — 6 points
+                            </option>
+
+                            <option data-score="4">
+                                $30,000 to $49,999 — 4 points
+                            </option>
+
+                            <option data-score="0">
+                                Under $30,000 earnings in a year — 0 points
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="oinp-note">
+
+                        Based on a Notice of Assessment issued by
+                        the Canada Revenue Agency in the last 5 years.
+
+                    </div>
+
+                </div>
+
+
+                <!-- LEGAL STATUS -->
+
+                <div class="oinp-question">
+
+                    <div class="oinp-label-row">
+
+                        <label>
+                            What valid legal status do you currently have in Canada?
+                        </label>
+
+                        <span
+                            class="oinp-points"
+                            id="points-status">
+                        </span>
+
+                    </div>
+
+                    <div class="oinp-select-wrap">
+
+                        <select
+                            class="oinp-select score-select"
+                            data-category="employment"
+                            data-points="status">
+
+                            <option value="" data-score="0">
+                                Select legal status
+                            </option>
+
+                            <option data-score="10">
+                                Valid work permit — 10 points
+                            </option>
+
+                            <option data-score="5">
+                                Valid study permit — 5 points
+                            </option>
+
+                            <option data-score="0">
+                                Without valid work or study permit — 0 points
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="oinp-note">
+
+                        The work or study permit must confer
+                        legal status in Canada.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 03 EDUCATION
+                 ================================================= -->
+
+            <div class="oinp-section">
+
+                <div class="oinp-section-header">
+
+                    <div class="oinp-section-icon">
+                        03
+                    </div>
+
+                    <div class="oinp-section-title">
+
+                        <h2>
+                            Education
+                        </h2>
+
+                        <p>
+                            Select your highest level of education
+                            and qualifying Canadian credentials.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="oinp-question">
+
+                    <div class="oinp-label-row">
+
+                        <label>
+                            What is your highest level of education?
+                        </label>
+
+                        <span
+                            class="oinp-points"
+                            id="points-education">
+                        </span>
+
+                    </div>
+
+                    <div class="oinp-select-wrap">
+
+                        <select
+                            class="oinp-select score-select"
+                            data-category="education"
+                            data-points="education">
+
+                            <option value="" data-score="0">
+                                Select highest education
+                            </option>
+
+                            <option data-score="10">
+                                Doctorate or degree in medicine, dentistry, veterinary medicine or optometry — 10 points
+                            </option>
+
+                            <option data-score="8">
+                                Master's degree — 8 points
+                            </option>
+
+                            <option data-score="6">
+                                University certificate or diploma above a bachelor's level — 6 points
+                            </option>
+
+                            <option data-score="6">
+                                Bachelor's degree or equivalent — 6 points
+                            </option>
+
+                            <option data-score="5">
+                                Ontario College Graduate Certificate — 5 points
+                            </option>
+
+                            <option data-score="5">
+                                University certificate or diploma below a bachelor's level — 5 points
+                            </option>
+
+                            <option data-score="5">
+                                College, CEGEP or other non-university certificate or diploma that is not an Ontario College Graduate Certificate — 5 points
+                            </option>
+
+                            <option data-score="5">
+                                Apprenticeship or trades certificate or diploma — 5 points
+                            </option>
+
+                            <option data-score="0">
+                                Less than college or trade certificate — 0 points
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="oinp-note">
+
+                        <strong>Education documentation:</strong>
+                        A Canadian credential or Educational Credential
+                        Assessment (ECA) may be required, depending on
+                        the applicant's circumstances.
+
+                    </div>
+
+                </div>
+
+
+                <div class="oinp-question">
+
+                    <div class="oinp-label-row">
+
+                        <label>
+                            How many qualifying Canadian education credentials do you have?
+                        </label>
+
+                        <span
+                            class="oinp-points"
+                            id="points-credentials">
+                        </span>
+
+                    </div>
+
+                    <div class="oinp-select-wrap">
+
+                        <select
+                            class="oinp-select score-select"
+                            data-category="education"
+                            data-points="credentials">
+
+                            <option value="" data-score="0">
+                                Select number of credentials
+                            </option>
+
+                            <option data-score="10">
+                                More than one Canadian credential — 10 points
+                            </option>
+
+                            <option data-score="5">
+                                One Canadian credential — 5 points
+                            </option>
+
+                            <option data-score="0">
+                                No Canadian credential — 0 points
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="oinp-note">
+
+                        The credential must be a post-secondary education
+                        credential from an eligible Canadian institution
+                        that takes at least one year to complete on a
+                        full-time basis.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 04 LANGUAGE
+                 ================================================= -->
+
+            <div class="oinp-section">
+
+                <div class="oinp-section-header">
+
+                    <div class="oinp-section-icon">
+                        04
+                    </div>
+
+                    <div class="oinp-section-title">
+
+                        <h2>
+                            Language
+                        </h2>
+
+                        <p>
+                            Official English or French language ability
+                            and knowledge of both official languages.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="oinp-question">
+
+                    <div class="oinp-label-row">
+
+                        <label>
+                            What is your qualifying official-language CLB level?
+                        </label>
+
+                        <span
+                            class="oinp-points"
+                            id="points-clb">
+                        </span>
+
+                    </div>
+
+                    <div class="oinp-select-wrap">
+
+                        <select
+                            class="oinp-select score-select"
+                            data-category="language"
+                            data-points="clb">
+
+                            <option value="" data-score="0">
+                                Select CLB level
+                            </option>
+
+                            <option data-score="15">
+                                CLB 9 or higher — 15 points
+                            </option>
+
+                            <option data-score="12">
+                                CLB 8 — 12 points
+                            </option>
+
+                            <option data-score="8">
+                                CLB 7 — 8 points
+                            </option>
+
+                            <option data-score="4">
+                                CLB 6 — 4 points
+                            </option>
+
+                            <option data-score="0">
+                                CLB 5 or lower — 0 points
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="oinp-note">
+
+                        Points are based on your lowest CLB level
+                        across reading, writing, listening and speaking.
+                        If both English and French tests were taken,
+                        the higher qualifying CLB may be used.
+
+                    </div>
+
+                </div>
+
+
+                <div class="oinp-question">
+
+                    <div class="oinp-label-row">
+
+                        <label>
+                            How many official languages qualify for points?
+                        </label>
+
+                        <span
+                            class="oinp-points"
+                            id="points-languages">
+                        </span>
+
+                    </div>
+
+                    <div class="oinp-select-wrap">
+
+                        <select
+                            class="oinp-select score-select"
+                            data-category="language"
+                            data-points="languages">
+
+                            <option value="" data-score="0">
+                                Select number of languages
+                            </option>
+
+                            <option data-score="10">
+                                2 official languages — 10 points
+                            </option>
+
+                            <option data-score="5">
+                                1 official language — 5 points
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="oinp-note">
+
+                        To receive 2-language points, you must have
+                        at least CLB 6 across all 4 language areas
+                        for both English and French tests.
+
+                    </div>
+
+                    <div class="oinp-note">
+
+                        <strong>Accepted language tests:</strong>
+                        English tests include IELTS General Training,
+                        CELPIP General and PTE Core. French tests include
+                        TEF Canada and TCF Canada.
+
+                        Academic and One Skill Retake tests are not
+                        accepted for this purpose.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 05 REGIONALIZATION
+                 ================================================= -->
+
+            <div class="oinp-section">
+
+                <div class="oinp-section-header">
+
+                    <div class="oinp-section-icon">
+                        05
+                    </div>
+
+                    <div class="oinp-section-title">
+
+                        <h2>
+                            Regionalization
+                        </h2>
+
+                        <p>
+                            Points depend on the Ontario work location
+                            or physician practice location.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="oinp-question">
+
+                    <div class="oinp-label-row">
+
+                        <label>
+                            Where is your Ontario work location or physician practice located?
+                        </label>
+
+                        <span
+                            class="oinp-points"
+                            id="points-region">
+                        </span>
+
+                    </div>
+
+                    <div class="oinp-select-wrap">
+
+                        <select
+                            class="oinp-select score-select"
+                            data-category="regionalization"
+                            data-points="region">
+
+                            <option value="" data-score="0">
+                                Select Ontario region
+                            </option>
+
+                            <option data-score="15">
+                                Northern Ontario — 15 points
+                            </option>
+
+                            <option data-score="10">
+                                Eastern Ontario — 10 points
+                            </option>
+
+                            <option data-score="10">
+                                Central Ontario outside GTA — 10 points
+                            </option>
+
+                            <option data-score="10">
+                                Southwestern Ontario — 10 points
+                            </option>
+
+                            <option data-score="5">
+                                Inside GTA except Toronto — 5 points
+                            </option>
+
+                            <option data-score="0">
+                                Toronto — 0 points
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="oinp-note">
+
+                        <strong>Job offer applicants:</strong>
+                        Regionalization is based on the work location
+                        in the job offer entered by the employer.
+
+                    </div>
+
+                    <div class="oinp-note">
+
+                        <strong>Self-employed physicians:</strong>
+                        Regionalization is based on the Ontario practice
+                        address associated with the OHIP billing number
+                        registration.
+
+                    </div>
+
+                    <details class="oinp-region-details">
+
+                        <summary>
+                            View Ontario region details
+                        </summary>
+
+                        <div class="oinp-region-content">
+
+                            <div class="oinp-region-item">
+                                <strong>Toronto:</strong>
+                                Toronto is scored separately from the
+                                rest of the GTA.
+                            </div>
+
+                            <div class="oinp-region-item">
+                                <strong>Inside GTA except Toronto:</strong>
+                                Select this option when the qualifying
+                                location is within the GTA but outside Toronto.
+                            </div>
+
+                            <div class="oinp-region-item">
+                                <strong>Central Ontario outside GTA:</strong>
+                                Select this option for qualifying Central
+                                Ontario locations outside the GTA.
+                            </div>
+
+                            <div class="oinp-region-item">
+                                <strong>Eastern Ontario:</strong>
+                                Select this option for qualifying Eastern
+                                Ontario locations.
+                            </div>
+
+                            <div class="oinp-region-item">
+                                <strong>Southwestern Ontario:</strong>
+                                Select this option for qualifying
+                                Southwestern Ontario locations.
+                            </div>
+
+                            <div class="oinp-region-item">
+                                <strong>Northern Ontario:</strong>
+                                Select this option for qualifying
+                                Northern Ontario locations.
+                            </div>
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+
+            <!-- DISCLAIMER -->
+
+            <div class="oinp-disclaimer">
+
+                <strong>Important:</strong>
+                This calculator is an EOI scoring estimator only.
+                It is <strong>not an eligibility assessment</strong>
+                and does not guarantee an invitation, nomination
+                or permanent residence.
+
+                <br><br>
+
+                Ontario's EOI scoring factors are not the same as
+                the stream's eligibility requirements. Applicants
+                must meet all applicable stream requirements and
+                provide documents supporting the scoring factors
+                claimed in their EOI.
+
+                <br><br>
+
+                Scoring rules and program requirements can change.
+                Always verify the latest information directly with
+                the Government of Ontario before making immigration
+                decisions.
+
+                <div class="oinp-source">
+                    <strong>Official source:</strong>
+                    Ontario Workforce Priority Stream
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             SCORE SUMMARY
+             ===================================================== -->
+
+        <aside class="oinp-summary">
+
+            <h3>
+                Score Breakdown
+            </h3>
+
+            <div class="oinp-summary-row">
+                <span>Employment</span>
+                <span id="sum-employment">0 pts</span>
+            </div>
+
+            <div class="oinp-summary-row">
+                <span>Education</span>
+                <span id="sum-education">0 pts</span>
+            </div>
+
+            <div class="oinp-summary-row">
+                <span>Language</span>
+                <span id="sum-language">0 pts</span>
+            </div>
+
+            <div class="oinp-summary-row">
+                <span>Regionalization</span>
+                <span id="sum-regionalization">0 pts</span>
+            </div>
+
+            <div class="oinp-summary-total">
+
+                <span>
+                    Total
+                </span>
+
+                <span id="sum-total">
+                    0 pts
+                </span>
+
+            </div>
+
+            <button
+                type="button"
+                class="oinp-reset"
+                id="oinpReset">
+
+                Reset Calculator
+
+            </button>
+
+        </aside>
+
+    </div>
+
+</div>
+
+
+<script>
+(function () {
+
+    "use strict";
+
+
+    /* =====================================================
+       BASIC ELEMENTS
+       ===================================================== */
+
+    const calculator =
+        document.getElementById("oinpCalculator");
+
+    if (!calculator) return;
+
+
+    const applicantType =
+        calculator.querySelector("#applicantType");
+
+    const wageSelect =
+        calculator.querySelector("#wage");
+
+    const wageQuestion =
+        calculator.querySelector("#wageQuestion");
+
+    const jobExperience =
+        calculator.querySelector("#jobExperience");
+
+    const experienceLabel =
+        calculator.querySelector("#experienceLabel");
+
+    const experienceNote =
+        calculator.querySelector("#jobExperienceNote");
+
+    const ontarioExperience =
+        calculator.querySelector("#ontarioExperience");
+
+    const ontarioExperienceBox =
+        calculator.querySelector("#ontarioExperienceBox");
+
+    const totalScoreEl =
+        calculator.querySelector("#oinpTotalScore");
+
+    const progressFill =
+        calculator.querySelector("#oinpProgressFill");
+
+    const progressText =
+        calculator.querySelector("#oinpProgressText");
+
+    const resetButton =
+        calculator.querySelector("#oinpReset");
+
+
+    const MAX_SCORE = 130;
+
+
+    /* =====================================================
+       CATEGORY SCORES
+       ===================================================== */
+
+    let scores = {
+
+        employment: 0,
+
+        education: 0,
+
+        language: 0,
+
+        regionalization: 0
+
+    };
+
+
+    /* =====================================================
+       POINT LABELS
+       ===================================================== */
+
+    const pointLabels = {
+
+        teer: "points-teer",
+
+        occupation: "points-occupation",
+
+        wage: "points-wage",
+
+        jobExperience: "points-jobExperience",
+
+        ontarioExperience:
+            "points-ontarioExperience",
+
+        earnings: "points-earnings",
+
+        status: "points-status",
+
+        education: "points-education",
+
+        credentials: "points-credentials",
+
+        clb: "points-clb",
+
+        languages: "points-languages",
+
+        region: "points-region"
+
+    };
+
+
+    /* =====================================================
+       EXPERIENCE OPTIONS
+       
+       IMPORTANT:
+       Options are dynamically created.
+       This fixes the previous dropdown problem.
+       ===================================================== */
+
+    function updateExperienceOptions() {
+
+        const type =
+            applicantType.value;
+
+
+        /*
+         * Completely clear existing options.
+         */
+
+        jobExperience.innerHTML = "";
+
+
+        /*
+         * Default option.
+         */
+
+        const defaultOption =
+            document.createElement("option");
+
+        defaultOption.value = "";
+
+        defaultOption.dataset.score = "0";
+
+        defaultOption.textContent =
+            "Select experience";
+
+        jobExperience.appendChild(
+            defaultOption
+        );
+
+
+        /* ===============================================
+           JOB OFFER APPLICANT
+           =============================================== */
+
+        if (type === "job") {
+
+            const options = [
+
+                {
+                    score: 18,
+                    text:
+                        "Over 24 months working in job offer position — 18 points"
+                },
+
+                {
+                    score: 15,
+                    text:
+                        "13 to 24 months working in job offer position — 15 points"
+                },
+
+                {
+                    score: 12,
+                    text:
+                        "6 to 12 months working in job offer position — 12 points"
+                },
+
+                {
+                    score: 0,
+                    text:
+                        "Less than 6 months working in job offer position or not currently working in position — 0 points"
+                }
+
+            ];
+
+
+            options.forEach(function (item) {
+
+                const option =
+                    document.createElement("option");
+
+                option.value =
+                    String(item.score);
+
+                option.dataset.score =
+                    String(item.score);
+
+                option.textContent =
+                    item.text;
+
+                jobExperience.appendChild(
+                    option
+                );
+
+            });
+
+        }
+
+
+        /* ===============================================
+           SELF-EMPLOYED PHYSICIAN
+           =============================================== */
+
+        else if (type === "physician") {
+
+            const options = [
+
+                {
+                    score: 18,
+                    text:
+                        "Over 24 months cumulative medical practice in Ontario — 18 points"
+                },
+
+                {
+                    score: 15,
+                    text:
+                        "13 months up to 24 months cumulative medical practice in Ontario — 15 points"
+                },
+
+                {
+                    score: 12,
+                    text:
+                        "6 months up to 12 months cumulative medical practice in Ontario — 12 points"
+                },
+
+                {
+                    score: 0,
+                    text:
+                        "Less than 6 months cumulative medical practice in Ontario — 0 points"
+                }
+
+            ];
+
+
+            options.forEach(function (item) {
+
+                const option =
+                    document.createElement("option");
+
+                option.value =
+                    String(item.score);
+
+                option.dataset.score =
+                    String(item.score);
+
+                option.textContent =
+                    item.text;
+
+                jobExperience.appendChild(
+                    option
+                );
+
+            });
+
+        }
+
+
+        /* ===============================================
+           NO APPLICANT TYPE SELECTED
+           =============================================== */
+
+        else {
+
+            const options = [
+
+                {
+                    score: 18,
+                    text:
+                        "Over 24 months — 18 points"
+                },
+
+                {
+                    score: 15,
+                    text:
+                        "13 to 24 months — 15 points"
+                },
+
+                {
+                    score: 12,
+                    text:
+                        "6 to 12 months — 12 points"
+                },
+
+                {
+                    score: 0,
+                    text:
+                        "Less than 6 months — 0 points"
+                }
+
+            ];
+
+
+            options.forEach(function (item) {
+
+                const option =
+                    document.createElement("option");
+
+                option.value =
+                    String(item.score);
+
+                option.dataset.score =
+                    String(item.score);
+
+                option.textContent =
+                    item.text;
+
+                jobExperience.appendChild(
+                    option
+                );
+
+            });
+
+        }
+
+    }
+
+
+    /* =====================================================
+       UPDATE CONDITIONAL QUESTIONS
+       ===================================================== */
+
+    function updateConditionalQuestions() {
+
+        const type =
+            applicantType.value;
+
+
+        /* ===============================================
+           PHYSICIAN
+           =============================================== */
+
+        if (type === "physician") {
+
+            /*
+             * Disable wage for physician.
+             */
+
+            wageSelect.value = "";
+
+            wageSelect.disabled = true;
+
+            wageQuestion.classList.add(
+                "disabled"
+            );
+
+
+            /*
+             * Physician experience wording.
+             */
+
+            experienceLabel.textContent =
+                "What is your cumulative medical practice history in Ontario?";
+
+
+            experienceNote.textContent =
+                "For self-employed physicians, select your cumulative qualifying medical practice history in Ontario.";
+
+
+            /*
+             * Hide Ontario work experience.
+             */
+
+            ontarioExperienceBox.classList.remove(
+                "visible"
+            );
+
+            ontarioExperience.value = "";
+
+
+            clearPoint(
+                "ontarioExperience"
+            );
+
+
+            return;
+        }
+
+
+        /* ===============================================
+           JOB OFFER
+           =============================================== */
+
+        if (type === "job") {
+
+            /*
+             * Enable wage.
+             */
+
+            wageSelect.disabled = false;
+
+            wageQuestion.classList.remove(
+                "disabled"
+            );
+
+
+            experienceLabel.textContent =
+                "What is your work experience in the job offer position?";
+
+
+            experienceNote.textContent =
+                "For job-offer applicants, points are based on qualifying experience in the job-offer position. If you have less than 6 months in the position, qualifying Ontario work experience may apply.";
+
+
+            /*
+             * Check selected experience.
+             */
+
+            const selected =
+                jobExperience.options[
+                    jobExperience.selectedIndex
+                ];
+
+
+            const selectedText =
+                selected
+                    ? selected.textContent.toLowerCase()
+                    : "";
+
+
+            /*
+             * Show Ontario experience only
+             * for less-than-6-month option.
+             */
+
+            if (
+                selectedText.includes(
+                    "less than 6 months"
+                )
+            ) {
+
+                ontarioExperienceBox.classList.add(
+                    "visible"
+                );
+
+            } else {
+
+                ontarioExperienceBox.classList.remove(
+                    "visible"
+                );
+
+                ontarioExperience.value = "";
+
+                clearPoint(
+                    "ontarioExperience"
+                );
+
+            }
+
+
+            return;
+        }
+
+
+        /* ===============================================
+           NO APPLICANT TYPE
+           =============================================== */
+
+        /*
+         * Wage remains clickable.
+         */
+
+        wageSelect.disabled = false;
+
+        wageQuestion.classList.remove(
+            "disabled"
+        );
+
+
+        experienceLabel.textContent =
+            "What is your work experience in the job offer position?";
+
+
+        experienceNote.textContent =
+            "Select your applicant type to determine which experience options apply.";
+
+
+        ontarioExperienceBox.classList.remove(
+            "visible"
+        );
+
+    }
+
+
+    /* =====================================================
+       EXPERIENCE CHANGE
+       ===================================================== */
+
+    function updateExperienceVisibility() {
+
+        const type =
+            applicantType.value;
+
+
+        if (type !== "job") {
+
+            ontarioExperienceBox.classList.remove(
+                "visible"
+            );
+
+            ontarioExperience.value = "";
+
+            clearPoint(
+                "ontarioExperience"
+            );
+
+            return;
+
+        }
+
+
+        const selected =
+            jobExperience.options[
+                jobExperience.selectedIndex
+            ];
+
+
+        if (!selected) return;
+
+
+        const text =
+            selected.textContent.toLowerCase();
+
+
+        if (
+            text.includes(
+                "less than 6 months"
+            )
+        ) {
+
+            ontarioExperienceBox.classList.add(
+                "visible"
+            );
+
+        } else {
+
+            ontarioExperienceBox.classList.remove(
+                "visible"
+            );
+
+            ontarioExperience.value = "";
+
+            clearPoint(
+                "ontarioExperience"
+            );
+
+        }
+
+    }
+
+
+    /* =====================================================
+       CLEAR POINT
+       ===================================================== */
+
+    function clearPoint(pointKey) {
+
+        const id =
+            pointLabels[pointKey];
+
+        if (!id) return;
+
+
+        const element =
+            calculator.querySelector(
+                "#" + id
+            );
+
+        if (!element) return;
+
+
+        element.textContent = "";
+
+        element.classList.remove(
+            "show"
+        );
+
+    }
+
+
+    /* =====================================================
+       CALCULATE SCORE
+       ===================================================== */
+
+    function calculateScore() {
+
+        scores = {
+
+            employment: 0,
+
+            education: 0,
+
+            language: 0,
+
+            regionalization: 0
+
+        };
+
+
+        const selects =
+            calculator.querySelectorAll(
+                ".score-select"
+            );
+
+
+        selects.forEach(function (select) {
+
+            /*
+             * Disabled wage for physician
+             * should not count.
+             */
+
+            if (select.disabled) {
+                return;
+            }
+
+
+            /*
+             * Ontario experience only counts
+             * when its box is visible.
+             */
+
+            if (
+                select === ontarioExperience &&
+                !ontarioExperienceBox.classList.contains(
+                    "visible"
+                )
+            ) {
+
+                return;
+
+            }
+
+
+            const selectedOption =
+                select.options[
+                    select.selectedIndex
+                ];
+
+
+            if (!selectedOption) {
+                return;
+            }
+
+
+            const points =
+                Number(
+                    selectedOption.dataset.score || 0
+                );
+
+
+            const category =
+                select.dataset.category;
+
+
+            if (
+                category &&
+                Object.prototype.hasOwnProperty.call(
+                    scores,
+                    category
+                )
+            ) {
+
+                scores[category] +=
+                    points;
+
+            }
+
+
+            const pointKey =
+                select.dataset.points;
+
+
+            if (
+                pointKey &&
+                pointLabels[pointKey]
+            ) {
+
+                const pointElement =
+                    calculator.querySelector(
+                        "#" +
+                        pointLabels[pointKey]
+                    );
+
+
+                if (!pointElement) {
+                    return;
+                }
+
+
+                if (
+                    select.value !== ""
+                ) {
+
+                    pointElement.textContent =
+                        "+" + points + " pts";
+
+                    pointElement.classList.add(
+                        "show"
+                    );
+
+                } else {
+
+                    pointElement.textContent =
+                        "";
+
+                    pointElement.classList.remove(
+                        "show"
+                    );
+
+                }
+
+            }
+
+        });
+
+
+        /*
+         * Total
+         */
+
+        const total =
+            scores.employment +
+            scores.education +
+            scores.language +
+            scores.regionalization;
+
+
+        updateScoreDisplay(
+            total
+        );
+
+    }
+
+
+    /* =====================================================
+       SCORE DISPLAY
+       ===================================================== */
+
+    function updateScoreDisplay(total) {
+
+        totalScoreEl.textContent =
+            total;
+
+
+        calculator.querySelector(
+            "#sum-employment"
+        ).textContent =
+            scores.employment + " pts";
+
+
+        calculator.querySelector(
+            "#sum-education"
+        ).textContent =
+            scores.education + " pts";
+
+
+        calculator.querySelector(
+            "#sum-language"
+        ).textContent =
+            scores.language + " pts";
+
+
+        calculator.querySelector(
+            "#sum-regionalization"
+        ).textContent =
+            scores.regionalization + " pts";
+
+
+        calculator.querySelector(
+            "#sum-total"
+        ).textContent =
+            total + " pts";
+
+
+        /*
+         * Progress
+         */
+
+        const percentage =
+            Math.min(
+                (total / MAX_SCORE) * 100,
+                100
+            );
+
+
+        progressFill.style.width =
+            percentage + "%";
+
+
+        progressText.textContent =
+            total + " / " + MAX_SCORE;
+
+
+        /*
+         * Score animation
+         */
+
+        totalScoreEl.classList.remove(
+            "bump"
+        );
+
+        void totalScoreEl.offsetWidth;
+
+        totalScoreEl.classList.add(
+            "bump"
+        );
+
+    }
+
+
+    /* =====================================================
+       APPLICANT TYPE CHANGE
+       ===================================================== */
+
+    applicantType.addEventListener(
+        "change",
+        function () {
+
+            updateExperienceOptions();
+
+            updateConditionalQuestions();
+
+            updateExperienceVisibility();
+
+            calculateScore();
+
+        }
+    );
+
+
+    /* =====================================================
+       EXPERIENCE CHANGE
+       ===================================================== */
+
+    jobExperience.addEventListener(
+        "change",
+        function () {
+
+            updateConditionalQuestions();
+
+            updateExperienceVisibility();
+
+            calculateScore();
+
+        }
+    );
+
+
+    /* =====================================================
+       ALL SCORE SELECTS
+       ===================================================== */
+
+    calculator
+        .querySelectorAll(
+            ".score-select"
+        )
+        .forEach(function (select) {
+
+            select.addEventListener(
+                "change",
+                function () {
+
+                    /*
+                     * Experience dropdown
+                     * has its own logic.
+                     */
+
+                    if (
+                        select === jobExperience
+                    ) {
+
+                        updateExperienceVisibility();
+
+                    }
+
+                    calculateScore();
+
+                }
+            );
+
+        });
+
+
+    /* =====================================================
+       RESET
+       ===================================================== */
+
+    resetButton.addEventListener(
+        "click",
+        function () {
+
+            /*
+             * Reset every select.
+             */
+
+            calculator
+                .querySelectorAll(
+                    "select"
+                )
+                .forEach(function (select) {
+
+                    select.value = "";
+
+                });
+
+
+            /*
+             * Wage becomes clickable again.
+             */
+
+            wageSelect.disabled = false;
+
+            wageQuestion.classList.remove(
+                "disabled"
+            );
+
+
+            /*
+             * Hide conditional box.
+             */
+
+            ontarioExperienceBox.classList.remove(
+                "visible"
+            );
+
+
+            /*
+             * Clear point labels.
+             */
+
+            calculator
+                .querySelectorAll(
+                    ".oinp-points"
+                )
+                .forEach(function (element) {
+
+                    element.textContent = "";
+
+                    element.classList.remove(
+                        "show"
+                    );
+
+                });
+
+
+            /*
+             * Rebuild experience options.
+             */
+
+            updateExperienceOptions();
+
+            updateConditionalQuestions();
+
+            updateExperienceVisibility();
+
+            calculateScore();
+
+        }
+    );
+
+
+    /* =====================================================
+       INITIAL LOAD
+       ===================================================== */
+
+    /*
+     * Wage must initially be clickable.
+     */
+
+    wageSelect.disabled = false;
+
+    wageQuestion.classList.remove(
+        "disabled"
+    );
+
+
+    /*
+     * Build experience dropdown.
+     */
+
+    updateExperienceOptions();
+
+
+    /*
+     * Apply initial conditional state.
+     */
+
+    updateConditionalQuestions();
+
+    updateExperienceVisibility();
+
+
+    /*
+     * Initial score.
+     */
+
+    calculateScore();
+
+})();
+</script>
+
+
+       
+
+
+
+<!-- Footer Start -->
+<footer>
+  <div class="container-fluid footer py-5" style="background-color: #000000; color: #ffffff;">
+    <div class="container py-5">
+      <div class="row g-5">
+
+        <style>
+
+          /* ===== Footer Links ===== */
+
+          .footer-item a {
+            display: inline-block;
+            transition: all 0.3s ease;
+            color: #ffffff;
+            text-decoration: none;
+            margin-bottom: 10px;
+          }
+
+          .footer-item a:hover {
+            transform: translateY(-4px);
+            color: #d32f2f !important;
+          }
+
+          .footer-item h4 {
+            transition: transform 0.3s ease;
+            font-weight: 700;
+          }
+
+          .footer-item h4:hover {
+            transform: translateY(-3px);
+          }
+
+          /* ===== Social Buttons ===== */
+
+          .footer-item .btn {
+            transition: all 0.3s ease;
+          }
+
+          .footer-item .btn:hover {
+            transform: translateY(-5px);
+            background-color: #d32f2f;
+            color: #fff !important;
+            border-color: #d32f2f;
+          }
+
+          /* ===== Quick Links ===== */
+
+          .quick-links a {
+            font-size: 15px;
+          }
+
+          /* ===== Designer Credit ===== */
+
+          .designer-credit {
+            text-align: center;
+            margin-top: 20px;
+            padding-bottom: 0px;
+            font-size: 16px;
+            color: #d32f2f;
+          }
+
+          .designer-credit a {
+            color: #d32f2f;
+            font-weight: 600;
+            text-decoration: none;
+          }
+
+          .designer-credit a:hover {
+            text-decoration: underline;
+          }
+
+          /* ===== Mobile Responsive ===== */
+
+          @media(max-width:768px){
+
+            .footer-item{
+              margin-bottom:30px;
+              text-align:left;
+            }
+
+            .footer-item h4{
+              font-size:22px;
+            }
+
+            .footer-item a,
+            .footer-item p{
+              font-size:14px !important;
+              line-height:1.7;
+            }
+
+            .designer-credit{
+              margin-top:15px;
+              font-size:14px;
+              text-align:center;
+            }
+
+            .footer .container{
+              padding-left:20px;
+              padding-right:20px;
+            }
+
+          }
+
+        </style>
+
+        <!-- Company Info -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+
+            <h4 class="mb-4" style="color: #d32f2f;">TS Immigration</h4>
+
+            <a href="#">
+              <i class="fas fa-home me-2" style="color: #d32f2f;"></i>
+              100 Wilkinson Rd, #3 Brampton, Ontario L6T 4Y9
+            </a>
+
+            <a href="mailto:info@tsimmigration.ca">
+              <i class="fas fa-envelope me-2" style="color: #d32f2f;"></i>
+              info@tsimmigration.ca
+            </a>
+
+            <a href="tel:+14164571313">
+              <i class="fas fa-phone me-2" style="color: #d32f2f;"></i>
+              +1 416 457-1313
+            </a>
+
+            <div class="d-flex align-items-center mt-3">
+
+              <i class="fas fa-share fa-2x me-2" style="color: #d32f2f;"></i>
+
+              <a class="btn btn-outline-danger btn-sm mx-1"
+                 href="https://www.facebook.com/tsimmigrations/"
+                 target="_blank">
+                 <i class="fab fa-facebook-f"></i>
+              </a>
+
+              <a class="btn btn-outline-danger btn-sm mx-1"
+                 href="https://www.instagram.com/tsimmigrations/?hl=en"
+                 target="_blank">
+                 <i class="fab fa-instagram"></i>
+              </a>
+
+              <a class="btn btn-outline-danger btn-sm mx-1"
+                 href="https://www.youtube.com/@jassidhandianpunjabi"
+                 target="_blank">
+                 <i class="fab fa-youtube"></i>
+              </a>
+
+              <a class="btn btn-outline-danger btn-sm mx-1"
+                 href="https://www.tiktok.com/@tsimmigrationbrampton"
+                 target="_blank">
+                 <i class="fab fa-tiktok"></i>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Immigration Services -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+
+            <h4 class="mb-4" style="color: #d32f2f;">Immigration Services</h4>
+
+            <a href="/express-entry">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Express Entry
+            </a>
+
+            <a href="/spouse-sponsorship">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Spouse Sponsorship
+            </a>
+
+            <a href="/caregiver-lmia">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Caregiver LMIA
+            </a>
+
+            <a href="/caregiver-permanent-residency">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Citizenship
+            </a>
+
+            <a href="/citizenship">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Caregiver PR
+            </a>
+
+            <a href="/business-investor">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Business Investor
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Visa Services -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+
+            <h4 class="mb-4" style="color: #d32f2f;">Visa</h4>
+
+            <a href="/student-visa">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Student Visa
+            </a>
+
+            <a href="/work-permit">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Work Permit
+            </a>
+
+            <a href="/visitor-visa">
+              <i class="fas fa-angle-right me-2" style="color: #d32f2f;"></i>
+              Visitor Visa
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Location + Quick Links -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+
+            <h4 class="mb-3" style="color: #d32f2f;">📍 Our Location</h4>
+
+            <p style="font-size:16px; line-height:1.6; color:#ffffff;">
+              100 Wilkinson Rd, #3<br>
+              Brampton, Ontario<br>
+              L6T 4Y9, Canada
+            </p>
+
+            <a href="https://maps.app.goo.gl/U3YJk52KTFSiBU9g6"
+               target="_blank"
+               style="margin-top:10px; color:#38b6ff; font-weight:600;">
+              ➤ View on Google Maps
+            </a>
+
+            <!-- Quick Links -->
+
+            <div class="quick-links mt-4">
+
+              <h4 class="mb-3" style="color:#d32f2f;">
+                Quick Links
+              </h4>
+
+              <a href="/private-policy">
+                <i class="fas fa-shield-alt me-2" style="color:#d32f2f;"></i>
+                Privacy Policy
+              </a>
+
+              <a href="/terms-conditions">
+                <i class="fas fa-file-contract me-2" style="color:#d32f2f;"></i>
+                Terms & Conditions
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Designer Credit -->
+
+      <div class="designer-credit">
+        Designed by
+        <a href="https://mediahero.ca/" target="_blank" rel="noopener">
+          Hero Media
+        </a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<!-- Footer End -->
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg-square back-to-top"
+   style="position: fixed; bottom: 25px; right: 25px; background-color: #8B0000; color: white; border: none; z-index: 9999; display: none;">
+   <i class="fa fa-arrow-up"></i>
+</a>
+
+<script>
+  const backToTop = document.querySelector('.back-to-top');
+  window.addEventListener('scroll', () => {
+    backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+  });
+</script>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/+14165604658" target="_blank" class="whatsapp-float">
+  <img src="/public/img/WhatsApp_icon (1).png" alt="WhatsApp" />
+  <span class="whatsapp-tooltip">Book Appointment</span>
+</a>
+
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    bottom: 20px;
+    left: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.whatsapp-float img {
+    width: 35px;
+}
+.whatsapp-tooltip {
+    position: absolute;
+    bottom: 75px;
+    left: 70%;
+    transform: translateX(-40%);
+    background: #25D366;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+</style>
+
+<!-- ===== SMALL PREMIUM COOKIE POPUP START ===== -->
+
+<div id="cookiePopup" class="cookie-popup">
+
+  <div class="cookie-content">
+
+    <!-- Close Button -->
+    <button id="closeCookie" class="cookie-close">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <!-- Icon -->
+    <div class="cookie-icon">
+      <i class="fas fa-cookie-bite"></i>
+    </div>
+
+    <!-- Heading -->
+    <h3>Cookies Used</h3>
+
+    <!-- Text -->
+    <p>
+      We use cookies & Meta Pixel to improve your experience.
+    </p>
+
+    <!-- Buttons -->
+    <div class="cookie-buttons">
+
+      <button id="acceptCookie" class="cookie-btn accept-btn">
+        Accept
+      </button>
+
+      <a href="/cookie-policy" class="cookie-btn policy-btn">
+        Learn More
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<style>
+
+/* ===== COOKIE POPUP ===== */
+
+.cookie-popup{
+  position:fixed;
+  bottom:18px;
+  left:50%;
+  transform:translateX(-50%);
+  width:90%;
+  max-width:360px;
+  z-index:999999;
+  display:none;
+  animation:cookieFade 0.7s ease;
+}
+
+/* ===== CONTENT ===== */
+
+.cookie-content{
+
+  position:relative;
+
+  background:rgba(0,0,0,0.93);
+
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+
+  border:1px solid rgba(211,47,47,0.22);
+
+  border-radius:18px;
+
+  padding:22px 18px;
+
+  text-align:center;
+
+  overflow:hidden;
+
+  box-shadow:
+  0 8px 25px rgba(0,0,0,0.35),
+  0 0 15px rgba(211,47,47,0.15);
+}
+
+/* ===== GLOW ===== */
+
+.cookie-content::before{
+  content:'';
+  position:absolute;
+  width:150px;
+  height:150px;
+  background:rgba(211,47,47,0.07);
+  border-radius:50%;
+  top:-80px;
+  right:-60px;
+}
+
+/* ===== ICON ===== */
+
+.cookie-icon{
+  width:52px;
+  height:52px;
+
+  background:#d32f2f;
+
+  border-radius:50%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin:auto;
+  margin-bottom:14px;
+
+  font-size:22px;
+  color:#fff;
+
+  position:relative;
+  z-index:2;
+}
+
+/* ===== TITLE ===== */
+
+.cookie-content h3{
+  color:#fff;
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:10px;
+  position:relative;
+  z-index:2;
+}
+
+/* ===== TEXT ===== */
+
+.cookie-content p{
+  color:#d6d6d6;
+  font-size:13px;
+  line-height:1.6;
+  margin-bottom:18px;
+  position:relative;
+  z-index:2;
+}
+
+/* ===== BUTTONS ===== */
+
+.cookie-buttons{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  position:relative;
+  z-index:2;
+}
+
+/* ===== COMMON BTN ===== */
+
+.cookie-btn{
+  border:none;
+  padding:10px 18px;
+  border-radius:40px;
+  font-size:12px;
+  font-weight:600;
+  text-decoration:none;
+  transition:0.3s ease;
+  cursor:pointer;
+}
+
+/* ===== ACCEPT ===== */
+
+.accept-btn{
+  background:#d32f2f;
+  color:#fff;
+}
+
+.accept-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 6px 15px rgba(211,47,47,0.3);
+}
+
+/* ===== POLICY ===== */
+
+.policy-btn{
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.15);
+  color:#fff;
+}
+
+.policy-btn:hover{
+  background:#fff;
+  color:#000;
+}
+
+/* ===== CLOSE ===== */
+
+.cookie-close{
+  position:absolute;
+  top:10px;
+  right:10px;
+
+  width:28px;
+  height:28px;
+
+  border:none;
+  border-radius:50%;
+
+  background:rgba(255,255,255,0.08);
+
+  color:#fff;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+
+  transition:0.3s ease;
+
+  z-index:3;
+
+  font-size:11px;
+}
+
+.cookie-close:hover{
+  background:#d32f2f;
+  transform:rotate(90deg);
+}
+
+/* ===== ANIMATION ===== */
+
+@keyframes cookieFade{
+
+  from{
+    opacity:1;
+    transform:translate(-50%,40px);
+  }
+
+  to{
+    opacity:1;
+    transform:translate(-50%,0);
+  }
+
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+  .cookie-popup{
+    max-width:320px;
+    bottom:15px;
+  }
+
+  .cookie-content{
+    padding:20px 16px;
+  }
+
+  .cookie-content h3{
+    font-size:20px;
+  }
+
+  .cookie-content p{
+    font-size:12px;
+  }
+
+  .cookie-btn{
+    padding:9px 16px;
+    font-size:11px;
+  }
+
+}
+
+</style>
+
+<script>
+
+/* ===== SHOW POPUP ===== */
+
+window.onload = function(){
+
+  if(!localStorage.getItem("cookieAccepted")){
+
+    document.getElementById("cookiePopup").style.display = "block";
+
+  }
+
+}
+
+/* ===== ACCEPT ===== */
+
+document.getElementById("acceptCookie").onclick = function(){
+
+  localStorage.setItem("cookieAccepted","true");
+
+  document.getElementById("cookiePopup").style.display = "none";
+
+}
+
+/* ===== CLOSE ===== */
+
+document.getElementById("closeCookie").onclick = function(){
+
+  document.getElementById("cookiePopup").style.display = "none";
+
+}
+
+</script>
+
+<!-- ===== SMALL PREMIUM COOKIE POPUP END ===== -->
+
+
+</body>
+</html>
+<!-- Cache by SpeedyCache https://speedycache.com -->
+{{ end }}

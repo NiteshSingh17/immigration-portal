@@ -1,0 +1,231 @@
+{{ define "navbar" }}
+
+<!-- ✅ Preload Font Awesome -->
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+<!-- ✅ Topbar -->
+<div id="topbar" class="container-fluid px-5 fade-in"
+  style="background-color:#dd302d; color:white; min-height:45px; display:flex; align-items:center; transition:opacity 0.5s ease; opacity:1;">
+
+  <div class="row gx-0 align-items-center justify-content-between w-100">
+
+    <!-- LEFT: Email + Phone + WhatsApp (DESKTOP ONLY) -->
+    <div class="col-lg-6 d-none d-lg-block">
+      <div class="d-flex align-items-center gap-4">
+
+        <!-- 🔒 Protected Email -->
+        <a id="protectedEmail" class="text-white text-decoration-none">
+          <i class="fas fa-envelope me-2 text-dark"></i>
+        </a>
+
+        <script>
+          function decodeMail(u, d) { return u + "@" + d; }
+          let email = decodeMail("info", "tsimmigration.ca");
+          document.getElementById("protectedEmail").href = "mailto:" + email;
+          document.getElementById("protectedEmail").innerHTML += email;
+        </script>
+
+        <!-- Phone -->
+        <a href="tel:+14164571313" class="text-white text-decoration-none">
+          <i class="fas fa-phone-alt me-2 text-dark"></i>+1 416 457-1313
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/14165604658" target="_blank" class="text-white text-decoration-none">
+          <i class="fab fa-whatsapp me-2"></i>+1 416 560-4658
+        </a>
+
+      </div>
+    </div>
+
+    <!-- 📱 MOBILE: ONLY PHONE -->
+    <div class="col-12 d-flex d-lg-none justify-content-center py-2">
+      <a href="tel:+14164571313" class="text-white text-decoration-none fs-5">
+        <i class="fas fa-phone-alt me-2 text-dark"></i>+1 416 457-1313
+      </a>
+    </div>
+
+    <!-- CENTER: SOCIAL ICONS (DESKTOP ONLY) -->
+    <div class="col-lg-3 text-center d-none d-lg-block">
+      <div class="d-inline-flex align-items-center" style="height:45px;">
+        <a class="social-icon me-2" href="https://www.facebook.com/share/1CW4pRSyUL/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="social-icon me-2" href="https://www.instagram.com/tsimmigrations/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="social-icon me-2" href="https://www.youtube.com/@jassidhandianpunjabi" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a class="social-icon" href="https://www.tiktok.com/@jassidhandianwala?_r=1&_t=ZS-98swrjVV5QO" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+
+    <!-- RIGHT: LOCATION (DESKTOP ONLY) -->
+    <div class="col-lg-3 text-end d-none d-lg-block">
+      <a href="https://maps.app.goo.gl/U3YJk52KTFSiBU9g6" target="_blank" class="text-white text-decoration-none">
+        <i class="fas fa-map-marker-alt me-2 text-dark"></i>
+        100 Wilkinson Rd, #3, Brampton, Ontario
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ✅ Topbar Animation -->
+<style>
+  .fade-in { animation: fadeInTopbar 0.8s ease forwards; }
+  @keyframes fadeInTopbar { 0% { opacity: 0; transform: translateY(-20px); } 100% { opacity: 1; transform: translateY(0); } }
+  .social-icon { display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; border:2px solid white; border-radius:50%; transition:all 0.3s ease; background:transparent; }
+  .social-icon i { font-size:18px; color:black; transition:all 0.3s ease; }
+  .social-icon:hover { background:white; }
+  .social-icon:hover i { color:#dd302d; transform:scale(1.1); }
+</style>
+
+<script>
+  window.addEventListener('load', () => {
+    const spinner = document.getElementById('spinner');
+    if (spinner) spinner.classList.remove('show');
+    document.getElementById('topbar').style.opacity = 1;
+  });
+</script>
+
+<!-- ✅ NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 position-relative">
+  <a href="/" class="navbar-brand d-flex align-items-center p-0 mx-auto">
+
+    <!-- 🔹 First Logo -->
+    <img src="/public/img/home page ts.jpg" 
+         alt="TS Immigration Logo" 
+         class="navbar-logo">
+
+    <!-- 🔹 Second Logo -->
+    <img src="/public/img/WhatsApp Image 2025-10-30 at 6.52.54 PM.jpeg" 
+         alt="Partner Logo" 
+         class="navbar-logo ms-2">
+
+  </a>
+
+ <!-- 🔹 Toggle Button -->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+    <span class="fa fa-bars" style="color:#000;"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav ms-auto py-0">
+
+      <a href="/" class="nav-item nav-link active">Home</a>
+      <a href="/about" class="nav-item nav-link">About</a>
+      <a href="/oinp-calculator" class="nav-item nav-link">OINP Calculator</a>
+      <a href="/refugee" class="nav-item nav-link">Refugee </a>
+      <a href="/easy-pr-certificate" class="nav-item nav-link">Job Assistance Program</a>
+
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown">Immigration Services</a>
+        <ul class="dropdown-menu">
+          <li><a href="/express-entry" class="dropdown-item">Express Entry</a></li>
+          <li><a href="/student-visa" class="dropdown-item">Student Visa</a></li>
+          <li><a href="/work-permit" class="dropdown-item">Work Permit</a></li>
+          <li><a href="/visitor-visa" class="dropdown-item">Visitor Visa</a></li>
+          <li><a href="/spouse-sponsorship" class="dropdown-item">Spouse Sponsorship</a></li>
+          <li><a href="/caregiver-lmia" class="dropdown-item">Caregiver LMIA</a></li>
+          <li><a href="/caregiver-permanent-residency" class="dropdown-item">Caregiver PR</a></li>
+          <li><a href="/citizenship" class="dropdown-item">Citizenship</a></li>
+          <li><a href="/business-investor" class="dropdown-item">Business Investor</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle custom-dropdown-toggle" data-bs-toggle="dropdown">Visa</a>
+        <ul class="dropdown-menu">
+          <li><a href="/student-visa" class="dropdown-item">Student Visa</a></li>
+          <li><a href="/work-permit" class="dropdown-item">Work Permit</a></li>
+          <li><a href="/visitor-visa" class="dropdown-item">Visitor Visa</a></li>
+        </ul>
+      </div>
+
+      <a href="/contact" class="nav-item nav-link">Contact</a>
+
+    </div>
+
+    <a href="http://bookeo.com/tsimmigration" 
+       class="btn btn-custom ms-lg-4" 
+       style="background-color:#d80000; color:#fff; border-radius:30px; padding:8px 20px; font-weight:600;">
+       Book Appointment
+    </a>
+
+  </div>
+</nav>
+
+<!-- Bootstrap JS (VERY IMPORTANT for toggle to work) -->
+<script src="/public/js/bootstrap.bundle.min.js"></script>
+
+<!-- ✅ Navbar CSS -->
+<style>
+/* Default Desktop Logo Size */
+.navbar-logo {
+  height: 55px;
+  width: auto;
+}
+
+.mobile-flag {
+  display: none;
+}
+
+/* 🔹 MOBILE VIEW */
+@media (max-width: 991px) {
+  .navbar {
+    background: linear-gradient(135deg, #ffffff 70%, #fff0f0 100%);
+    position: relative;
+    text-align: center;
+    border-bottom: 2px solid rgba(216, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    gap: 4px;
+  }
+
+  .navbar-logo {
+    height: 40px;
+  }
+
+  /* 🇨🇦 Flags visible only on mobile */
+  .mobile-flag {
+    display: inline-block;
+    height: 30px;
+    width: auto;
+    opacity: 0.6;
+    filter: saturate(110%) brightness(1.1);
+    animation: gentle-wave 4s ease-in-out infinite alternate;
+  }
+
+  /* Menu icon aligned right */
+  .navbar-toggler {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+  }
+
+  /* Gentle waving animation for flags */
+  @keyframes gentle-wave {
+    0% { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(2deg) scale(1.05); }
+  }
+}
+
+/* ✅ Navbar Extras (matches live site) */
+.navbar-nav .nav-link { font-size:17px; font-weight:600; color:#000 !important; transition:color 0.2s ease; }
+.navbar-nav .nav-link:hover { color:#d80000 !important; }
+.custom-dropdown-toggle::after { content:"\25BC"; font-size:0.6rem; margin-left:6px; vertical-align:middle; transition:transform 0.2s ease; border:none!important; }
+.show>.custom-dropdown-toggle::after { transform:rotate(180deg); }
+.dropdown-menu { border-radius:8px; border:none; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+.dropdown-item { color:#000; font-weight:500; transition:all 0.2s ease; }
+.dropdown-item:hover { color:#d80000; background-color:#f8f9fa; }
+.btn-custom:hover { background-color:#b30000; }
+</style>
+
+{{ end }}
